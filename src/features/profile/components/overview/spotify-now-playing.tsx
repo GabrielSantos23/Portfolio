@@ -3,9 +3,8 @@
 import { Music2Icon } from "lucide-react";
 import React from "react";
 import useSWR from "swr";
-
 import { USER } from "@/data/user";
-
+import { AiOutlineSpotify } from "react-icons/ai";
 import { IntroItem } from "./intro-item";
 
 type ApiResponse =
@@ -28,24 +27,32 @@ export function SpotifyNowPlaying() {
   });
 
   if (!data) {
-    return <IntroItem icon={Music2Icon} content="Loading current track…" />;
+    return <IntroItem icon={Music2Icon} content="Carregando faixa atual…" />;
   }
+
+  const SpotifyIcon = () => (
+    <AiOutlineSpotify className={`${data.isPlaying ? "text-green-500" : "text-gray-500"} pointer-events-none size-4`} />
+  );
 
   if (data.isPlaying) {
     return (
       <IntroItem
-        icon={Music2Icon}
-        content={`${data.title} – ${data.artist}`}
+        icon={SpotifyIcon}
+        content={<span className="text-green-500">{`${data.title} – ${data.artist}`}</span>}
         href={data.songUrl}
       />
     );
+  } else {
+    return (
+      <IntroItem
+        icon={SpotifyIcon}
+        content={
+          <>
+            <span className="">Acesse meu Spotify</span>
+          </>
+        }
+        href={USER.spotifyUrl}
+      />
+    );
   }
-
-  return (
-    <IntroItem
-      icon={Music2Icon}
-      content="Listen on Spotify"
-      href={USER.spotifyUrl ?? "https://open.spotify.com/"}
-    />
-  );
-} 
+}

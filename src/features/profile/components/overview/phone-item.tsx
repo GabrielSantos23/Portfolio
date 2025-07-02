@@ -15,7 +15,7 @@ export function PhoneItem({ phoneNumber }: { phoneNumber: string }) {
     <IntroItem
       icon={PhoneIcon}
       content={
-        isClient ? formatPhoneNumber(phoneNumberDecoded) : "[Phone protected]"
+        isClient ? formatPhoneNumber(phoneNumberDecoded) : "[Telefone protegido]"
       }
       href={isClient ? `tel:${phoneNumberDecoded}` : "#"}
     />

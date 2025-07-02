@@ -35,7 +35,7 @@ import { cn } from "@/lib/utils";
 import type { Post } from "@/types/blog";
 import { copyText } from "@/utils/copy";
 
-import { ChanhDaiMark, getMarkSVG } from "./chanhdai-mark";
+import { MarkName, getMarkSVG } from "./MarkLogo";
 import { getWordmarkSVG } from "./chanhdai-wordmark";
 import { Icons } from "./icons";
 import { Button } from "./ui/button";
@@ -53,9 +53,9 @@ type CommandLinkItem = {
 
 const MENU_LINKS: CommandLinkItem[] = [
   {
-    title: "Daifolio",
+    title: "Portfólio",
     href: "/",
-    icon: ChanhDaiMark,
+    icon: MarkName,
   },
   {
     title: "Blog",
@@ -63,45 +63,45 @@ const MENU_LINKS: CommandLinkItem[] = [
     icon: RssIcon,
   },
   {
-    title: "Components",
+    title: "Projetos",
     href: "/components",
     icon: Icons.react,
   },
 ];
 
-const DAIFOLIO_LINKS: CommandLinkItem[] = [
+const PORTFOLIO_LINKS: CommandLinkItem[] = [
   {
-    title: "About",
+    title: "Sobre",
     href: "/#about",
     icon: LetterTextIcon,
   },
   {
-    title: "Tech Stack",
+    title: "Tecnologias",
     href: "/#stack",
     icon: Icons.ts,
   },
   {
-    title: "Experience",
+    title: "Experiência",
     href: "/#experience",
     icon: BriefcaseBusinessIcon,
   },
   {
-    title: "Projects",
+    title: "Projetos",
     href: "/#projects",
     icon: Icons.project,
   },
   {
-    title: "Honors & Awards",
+    title: "Honras e Prêmios",
     href: "/#awards",
     icon: Icons.award,
   },
   {
-    title: "Certifications",
+    title: "Certificações",
     href: "/#certs",
     icon: Icons.certificate,
   },
   {
-    title: "Download vCard",
+    title: "Baixar vCard",
     href: "/vcard",
     icon: CircleUserIcon,
   },
@@ -209,7 +209,7 @@ export function CommandMenu({ posts }: { posts: Post[] }) {
         </svg>
 
         <span className="font-sans text-sm/4 font-medium sm:hidden">
-          Search
+          Buscar
         </span>
 
         <CommandMenuKbd className="hidden tracking-wider sm:in-[.os-macos_&]:flex">
@@ -221,10 +221,10 @@ export function CommandMenu({ posts }: { posts: Post[] }) {
       </Button>
 
       <CommandDialog open={open} onOpenChange={setOpen}>
-        <CommandInput placeholder="Type a command or search..." />
+        <CommandInput placeholder="Digite um comando ou pesquise..." />
 
         <CommandList className="min-h-80">
-          <CommandEmpty>No results found.</CommandEmpty>
+          <CommandEmpty>Nenhum resultado encontrado.</CommandEmpty>
 
           <CommandLinkGroup
             heading="Menu"
@@ -235,8 +235,8 @@ export function CommandMenu({ posts }: { posts: Post[] }) {
           <CommandSeparator />
 
           <CommandLinkGroup
-            heading="Daifolio"
-            links={DAIFOLIO_LINKS}
+            heading="Portfólio"
+            links={PORTFOLIO_LINKS}
             onLinkSelect={handleOpenLink}
           />
 
@@ -252,7 +252,7 @@ export function CommandMenu({ posts }: { posts: Post[] }) {
           <CommandSeparator />
 
           <CommandLinkGroup
-            heading="Components"
+            heading="Componentes"
             links={componentLinks}
             fallbackIcon={Icons.react}
             onLinkSelect={handleOpenLink}
@@ -261,76 +261,76 @@ export function CommandMenu({ posts }: { posts: Post[] }) {
           <CommandSeparator />
 
           <CommandLinkGroup
-            heading="Social Links"
+            heading="Redes Sociais"
             links={SOCIAL_LINK_ITEMS}
             onLinkSelect={handleOpenLink}
           />
 
           <CommandSeparator />
 
-          <CommandGroup heading="Brand Assets">
+          <CommandGroup heading="Marca">
             <CommandItem
               onSelect={() => {
                 handleCopyText(
                   getMarkSVG(resolvedTheme === "light" ? "#000" : "#fff"),
-                  "Copied Mark as SVG"
+                  "Marca copiada como SVG"
                 );
               }}
             >
-              <ChanhDaiMark />
-              Copy Mark as SVG
+              <MarkName width={100} height={100} />
+              Copiar Marca como SVG
             </CommandItem>
 
             <CommandItem
               onSelect={() => {
                 handleCopyText(
                   getWordmarkSVG(resolvedTheme === "light" ? "#000" : "#fff"),
-                  "Copied Logotype as SVG"
+                  "Logotipo copiado como SVG"
                 );
               }}
             >
               <TypeIcon />
-              Copy Logotype as SVG
+              Copiar Logotipo como SVG
             </CommandItem>
 
             <CommandItem
               onSelect={() => handleOpenLink("/blog/chanhdai-brand")}
             >
               <TriangleDashedIcon />
-              Brand Guidelines
+              Guia de Marca
             </CommandItem>
 
             <CommandItem asChild>
               <a href="https://assets.chanhdai.com/chanhdai-brand.zip" download>
                 <DownloadIcon />
-                Download Brand Assets
+                Baixar Ativos da Marca
               </a>
             </CommandItem>
           </CommandGroup>
 
           <CommandSeparator />
 
-          <CommandGroup heading="Theme">
+          <CommandGroup heading="Tema">
             <CommandItem
-              keywords={["theme"]}
+              keywords={["tema"]}
               onSelect={() => handleThemeChange("light")}
             >
               <SunIcon />
-              Light
+              Claro
             </CommandItem>
             <CommandItem
-              keywords={["theme"]}
+              keywords={["tema"]}
               onSelect={() => handleThemeChange("dark")}
             >
               <MoonStarIcon />
-              Dark
+              Escuro
             </CommandItem>
             <CommandItem
-              keywords={["theme"]}
+              keywords={["tema"]}
               onSelect={() => handleThemeChange("system")}
             >
               <Icons.contrast />
-              Auto
+              Automático
             </CommandItem>
           </CommandGroup>
         </CommandList>
@@ -423,9 +423,9 @@ function buildCommandMetaMap() {
 const COMMAND_META_MAP = buildCommandMetaMap();
 
 const ENTER_ACTION_LABELS: Record<CommandKind, string> = {
-  command: "Run Command",
-  page: "Go to Page",
-  link: "Open Link",
+  command: "Executar Comando",
+  page: "Ir para Página",
+  link: "Abrir Link",
 };
 
 function CommandMenuFooter() {
@@ -438,7 +438,7 @@ function CommandMenuFooter() {
       <div className="flex h-10" />
 
       <div className="absolute inset-x-0 bottom-0 flex h-10 items-center justify-between gap-2 border-t bg-zinc-100/30 px-4 text-xs font-medium dark:bg-zinc-800/30">
-        <ChanhDaiMark className="size-6 text-muted-foreground" aria-hidden />
+        <MarkName width={16} height={16} className="size-6 text-muted-foreground" aria-hidden />
 
         <div className="flex shrink-0 items-center gap-2">
           <span>{ENTER_ACTION_LABELS[selectedCommandKind]}</span>
@@ -449,7 +449,7 @@ function CommandMenuFooter() {
             orientation="vertical"
             className="data-[orientation=vertical]:h-4"
           />
-          <span className="text-muted-foreground">Exit</span>
+          <span className="text-muted-foreground">Sair</span>
           <CommandMenuKbd>Esc</CommandMenuKbd>
         </div>
       </div>

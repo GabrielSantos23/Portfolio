@@ -11,7 +11,7 @@ export function TeckStack() {
   return (
     <Panel id="stack">
       <PanelHeader>
-        <PanelTitle>Stack</PanelTitle>
+        <PanelTitle>Tecnologias</PanelTitle>
       </PanelHeader>
 
       <PanelContent
@@ -24,7 +24,7 @@ export function TeckStack() {
         <ul className="flex flex-wrap gap-4 select-none">
           {TECH_STACK.map((tech) => {
             return (
-              <li key={tech.key} className="flex">
+              <li key={tech.key} className="flex bg-card rounded-md">
                 <SimpleTooltip content={tech.title}>
                   <a
                     href={tech.href}
@@ -35,7 +35,7 @@ export function TeckStack() {
                     {tech.theme ? (
                       <>
                         <Image
-                          src={`https://assets.chanhdai.com/images/tech-stack-icons/${tech.key}-light.svg`}
+                          src={`https://assets.gsantos.site/images/tech-stack-icons/${tech.key}.svg`}
                           alt={`${tech.title} light icon`}
                           width={32}
                           height={32}
@@ -43,17 +43,17 @@ export function TeckStack() {
                           unoptimized
                         />
                         <Image
-                          src={`https://assets.chanhdai.com/images/tech-stack-icons/${tech.key}-dark.svg`}
+                          src={`https://assets.gsantos.site/images/tech-stack-icons/${tech.key}.svg`}
                           alt={`${tech.title} dark icon`}
                           width={32}
                           height={32}
-                          className="hidden [html.dark_&]:block"
+                          className="hidden [html.dark_&]:block invert"
                           unoptimized
                         />
                       </>
                     ) : (
                       <Image
-                        src={`https://assets.chanhdai.com/images/tech-stack-icons/${tech.key}.svg`}
+                        src={`https://assets.gsantos.site/images/tech-stack-icons/${tech.key}.svg`}
                         alt={`${tech.title} icon`}
                         width={32}
                         height={32}

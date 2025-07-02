@@ -14,7 +14,7 @@ export function EmailItem({ email }: { email: string }) {
   return (
     <IntroItem
       icon={MailIcon}
-      content={isClient ? emailDecoded : "[Email protected]"}
+      content={isClient ? emailDecoded : "[Email protegido]"}
       href={isClient ? `mailto:${emailDecoded}` : "#"}
     />
   );

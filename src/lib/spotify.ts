@@ -90,6 +90,10 @@ export async function getNowPlaying(): Promise<NowPlayingResponse> {
     return { isPlaying: false };
   }
 
+  if (!parsed.data.is_playing) {
+    return { isPlaying: false };
+  }
+
   const track = parsed.data.item;
   const title = track.name;
   const artist = track.artists.map((a) => a.name).join(", ");

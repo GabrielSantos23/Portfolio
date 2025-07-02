@@ -8,7 +8,7 @@ export const TECH_STACK: TechStack[] = [
     categories: ["Language"],
   },
   {
-    key: "js",
+    key: "javascript",
     title: "JavaScript",
     href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
     categories: ["Language"],
@@ -32,6 +32,13 @@ export const TECH_STACK: TechStack[] = [
     categories: ["Language"],
   },
   {
+    key: "rust",
+    title: "Rust",
+    href: "https://www.rust-lang.org/",
+    categories: ["Language"],
+    theme: true,
+  },
+  {
     key: "nodejs",
     title: "Node.js",
     href: "https://nodejs.org/",
@@ -50,11 +57,31 @@ export const TECH_STACK: TechStack[] = [
     categories: ["Library", "UI Library"],
   },
   {
-    key: "nextjs2",
+    key: "expo",
+    title: "Expo",
+    href: "https://expo.dev/",
+    categories: ["Framework", "Mobile"],
+    theme: true,
+  },
+  {
+    key: "flutter",
+    title: "Flutter",
+    href: "https://flutter.dev/",
+    categories: ["Framework", "Mobile"],
+  },
+  {
+    key: "svelte",
+    title: "Svelte",
+    href: "https://svelte.dev/",
+    categories: ["Framework", "UI Library"],
+  },
+  {
+    key: "nextjs",
     title: "Next.js",
     href: "https://nextjs.org/",
     categories: ["Framework"],
     theme: true,
+
   },
   {
     key: "tailwindcss",
@@ -62,13 +89,7 @@ export const TECH_STACK: TechStack[] = [
     href: "https://tailwindcss.com/",
     categories: ["Framework"],
   },
-  {
-    key: "shadcn-ui",
-    title: "shadcn/ui",
-    href: "https://ui.shadcn.com/",
-    categories: ["Library", "Component Library"],
-    theme: true,
-  },
+
   {
     key: "radixui",
     title: "Radix UI",
@@ -82,24 +103,14 @@ export const TECH_STACK: TechStack[] = [
     href: "https://motion.dev/",
     categories: ["Library", "Animation"],
   },
-  {
-    key: "mobx-state-tree",
-    title: "MobX-State-Tree",
-    href: "https://mobx-state-tree.js.org/",
-    categories: ["State Management"],
-  },
+
   {
     key: "redux",
     title: "Redux",
     href: "https://redux.js.org/",
     categories: ["State Management"],
   },
-  {
-    key: "antd",
-    title: "Ant Design",
-    href: "https://ant.design/",
-    categories: ["Library", "UI Library"],
-  },
+
   {
     key: "react-router",
     title: "React Router",
@@ -150,9 +161,9 @@ export const TECH_STACK: TechStack[] = [
     categories: ["Database"],
   },
   {
-    key: "redis",
-    title: "Redis",
-    href: "https://redis.io/",
+    key: "convex",
+    title: "Convex",
+    href: "https://www.convex.dev/",
     categories: ["Database"],
   },
   {
@@ -167,17 +178,5 @@ export const TECH_STACK: TechStack[] = [
     href: "https://www.adobe.com/vn_en/products/photoshop.html",
     categories: ["Tools", "Design"],
   },
-  {
-    key: "chatgpt",
-    title: "ChatGPT",
-    href: "https://chatgpt.com/",
-    categories: ["Tools", "AI"],
-    theme: true,
-  },
-  // {
-  //   key: "zalo-mini-app",
-  //   title: "Zalo Mini App",
-  //   href: "https://mini.zalo.me/",
-  //   categories: ["Other"],
-  // },
+
 ];
