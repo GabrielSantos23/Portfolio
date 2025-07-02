@@ -12,6 +12,11 @@ const nextConfig: NextConfig = {
         hostname: "assets.chanhdai.com",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "i.scdn.co",
+        port: "",
+      },
     ],
   },
   async rewrites() {

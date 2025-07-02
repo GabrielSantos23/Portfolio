@@ -8,6 +8,7 @@ import useSWR from "swr";
 import { USER } from "@/data/user";
 
 import { IntroItem } from "./intro-item";
+import { SpotifyHoverCard } from "./spotify-hover-card";
 
 type ApiResponse =
   | {
@@ -18,6 +19,7 @@ type ApiResponse =
       title: string;
       artist: string;
       songUrl: string;
+      albumImageUrl?: string;
     };
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
@@ -29,18 +31,45 @@ export function SpotifyNowPlaying() {
   });
 
   if (!data) {
-    return <IntroItem icon={Music2Icon} content="Carregando faixa atual…" />;
+    return <IntroItem icon={Music2Icon} content="Carregando música atual…" />;
   }
 
+  // Animated Spotify icon with pulsing animation when playing
   const SpotifyIcon = () => (
-    <AiOutlineSpotify className={`${data.isPlaying ? "text-green-500" : "text-gray-500"} pointer-events-none size-4`} />
+    <div className="relative">
+      <AiOutlineSpotify 
+        className={`${
+          data.isPlaying ? "text-green-500" : "text-gray-500"
+        } pointer-events-none size-4 ${
+          data.isPlaying ? "animate-pulse" : ""
+        }`} 
+      />
+   
+    </div>
   );
 
   if (data.isPlaying) {
+    const songContent = (
+      <div className="flex gap-2">
+        <span className="text-green-500 font-medium">{data.title}</span>
+        <span className="text-sm text-gray-400">por {data.artist}</span>
+      </div>
+    );
+
     return (
       <IntroItem
         icon={SpotifyIcon}
-        content={<span className="text-green-500">{`${data.title} – ${data.artist}`}</span>}
+        content={
+          <SpotifyHoverCard
+            isPlaying={data.isPlaying}
+            title={data.title}
+            artist={data.artist}
+            songUrl={data.songUrl}
+            albumImageUrl={data.albumImageUrl}
+          >
+            {songContent}
+          </SpotifyHoverCard>
+        }
         href={data.songUrl}
       />
     );
@@ -49,9 +78,10 @@ export function SpotifyNowPlaying() {
       <IntroItem
         icon={SpotifyIcon}
         content={
-          <>
-            <span className="">Acesse meu Spotify</span>
-          </>
+          <div className="flex gap-2">
+            <span className="text-xs text-muted-foreground ">🎧 </span>
+            <span>Não está tocando • Ver perfil</span>
+          </div>
         }
         href={USER.spotifyUrl}
       />
