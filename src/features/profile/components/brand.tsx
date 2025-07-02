@@ -2,8 +2,8 @@ import { ArrowRightIcon } from "lucide-react";
 import Link from "next/link";
 
 import { BrandContextMenu } from "@/components/brand-context-menu";
-import { MarkName } from "@/components/MarkLogo";
 import { ChanhDaiWordmark } from "@/components/chanhdai-wordmark";
+import { MarkName } from "@/components/MarkLogo";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 

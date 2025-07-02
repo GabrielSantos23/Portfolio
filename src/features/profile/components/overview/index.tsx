@@ -7,8 +7,8 @@ import { Panel, PanelContent } from "../panel";
 import { EmailItem } from "./email-item";
 import { IntroItem } from "./intro-item";
 import { JobItem } from "./job-item";
-import { SpotifyNowPlaying } from "./spotify-now-playing";
 import { PhoneItem } from "./phone-item";
+import { SpotifyNowPlaying } from "./spotify-now-playing";
 
 export function Overview() {
   return (

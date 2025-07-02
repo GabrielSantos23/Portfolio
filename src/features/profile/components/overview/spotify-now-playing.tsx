@@ -2,9 +2,11 @@
 
 import { Music2Icon } from "lucide-react";
 import React from "react";
-import useSWR from "swr";
-import { USER } from "@/data/user";
 import { AiOutlineSpotify } from "react-icons/ai";
+import useSWR from "swr";
+
+import { USER } from "@/data/user";
+
 import { IntroItem } from "./intro-item";
 
 type ApiResponse =
