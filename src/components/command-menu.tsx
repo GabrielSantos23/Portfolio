@@ -30,7 +30,6 @@ import {
   CommandList,
   CommandSeparator,
 } from "@/components/ui/command";
-import { SOCIAL_LINKS } from "@/features/profile/data/social-links";
 import { cn } from "@/lib/utils";
 import type { Post } from "@/types/blog";
 import { copyText } from "@/utils/copy";
@@ -91,11 +90,6 @@ const PORTFOLIO_LINKS: CommandLinkItem[] = [
     icon: Icons.project,
   },
   {
-    title: "Honras e Prêmios",
-    href: "/#awards",
-    icon: Icons.award,
-  },
-  {
     title: "Certificações",
     href: "/#certs",
     icon: Icons.certificate,
@@ -107,12 +101,32 @@ const PORTFOLIO_LINKS: CommandLinkItem[] = [
   },
 ];
 
-const SOCIAL_LINK_ITEMS: CommandLinkItem[] = SOCIAL_LINKS.map((item) => ({
-  title: item.title,
-  href: item.href,
-  iconImage: item.icon,
-  openInNewTab: true,
-}));
+const SOCIAL_LINK_ITEMS: CommandLinkItem[] = [
+  {
+    title: "GitHub",
+    href: "https://github.com/GabrielSantos23",
+    iconImage: "/images/link-icons/github.webp",
+    openInNewTab: true,
+  },
+  {
+    title: "LinkedIn",
+    href: "https://linkedin.com/in/gabriel-santos-ss",
+    iconImage: "/images/link-icons/linkedin.webp",
+    openInNewTab: true,
+  },
+  {
+    title: "X",
+    href: "https://x.com/gsantos23",
+    iconImage: "/images/link-icons/x.webp",
+    openInNewTab: true,
+  },
+  {
+    title: "Instagram",
+    href: "https://www.instagram.com/gabriel.santos.ss/",
+    iconImage: "/images/link-icons/Instagram_icon.webp",
+    openInNewTab: true,
+  },
+];
 
 export function CommandMenu({ posts }: { posts: Post[] }) {
   const router = useRouter();

@@ -18,7 +18,7 @@ export function CodeBlockCommand({
 }: NpmCommands) {
   const [config, setConfig] = useConfig();
 
-  const packageManager = config.packageManager || "pnpm";
+  const packageManager = config.packageManager || "bun";
 
   const tabs = useMemo(() => {
     return {

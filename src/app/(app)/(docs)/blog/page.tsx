@@ -2,15 +2,16 @@ import dayjs from "dayjs";
 import type { Metadata } from "next";
 
 import { PostItem } from "@/components/post-item";
-import { getAllPosts } from "@/data/blog";
+import { getAllPosts } from "@/sanity/fetchers";
 
 export const metadata: Metadata = {
   title: "Blog",
   description: "A collection of articles on development, design, and ideas.",
 };
 
-export default function Page() {
-  const allPosts = getAllPosts();
+export default async function Page() {
+  const allPosts = await getAllPosts();
+  if (!allPosts) return null;
 
   return (
     <>
@@ -33,9 +34,7 @@ export default function Page() {
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           {allPosts
             .slice()
-            .sort((a, b) =>
-              dayjs(b.metadata.createdAt).diff(dayjs(a.metadata.createdAt))
-            )
+            .sort((a, b) => dayjs(b.createdAt).diff(dayjs(a.createdAt)))
             .map((post, index) => (
               <PostItem
                 key={post.slug}

@@ -6,17 +6,20 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { BlogPosting as PageSchema, WithContext } from "schema-dts";
 
+import matter from "gray-matter";
+
 import { InlineTOC } from "@/components/inline-toc";
 import { MDX } from "@/components/mdx";
 import { Button } from "@/components/ui/button";
 import { Prose } from "@/components/ui/typography";
 import { SITE_INFO } from "@/config/site";
-import { findNeighbour, getAllPosts, getPostBySlug } from "@/data/blog";
+import { getAllPosts, getPostBySlug } from "@/sanity/fetchers";
 import { USER } from "@/data/user";
+
 import type { Post } from "@/types/blog";
 
 export async function generateStaticParams() {
-  const posts = getAllPosts();
+  const posts = await getAllPosts();
   return posts.map((post) => ({
     slug: post.slug,
   }));
@@ -28,13 +31,13 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const slug = (await params).slug;
-  const post = getPostBySlug(slug);
+  const post = await getPostBySlug(slug);
 
   if (!post) {
     return notFound();
   }
 
-  const { title, description, image, createdAt, updatedAt } = post.metadata;
+  const { title, description, image, createdAt, updatedAt } = post;
 
   const postUrl = getPostUrl(post);
   const ogImage = image || `/og/simple?title=${encodeURIComponent(title)}`;
@@ -64,18 +67,20 @@ export async function generateMetadata({
   };
 }
 
-function getPageJsonLd(post: Post): WithContext<PageSchema> {
+function getPageJsonLd(
+  post: Awaited<ReturnType<typeof getPostBySlug>>
+): WithContext<PageSchema> {
+  if (!post) throw new Error("Post not found");
+
   return {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    headline: post.metadata.title,
-    description: post.metadata.description,
-    image:
-      post.metadata.image ||
-      `/og/simple?title=${encodeURIComponent(post.metadata.title)}`,
+    headline: post.title,
+    description: post.description,
+    image: post.image || `/og/simple?title=${encodeURIComponent(post.title)}`,
     url: `${SITE_INFO.url}${getPostUrl(post)}`,
-    datePublished: dayjs(post.metadata.createdAt).toISOString(),
-    dateModified: dayjs(post.metadata.updatedAt).toISOString(),
+    datePublished: dayjs(post.createdAt).toISOString(),
+    dateModified: dayjs(post.updatedAt).toISOString(),
     author: {
       "@type": "Person",
       name: USER.displayName,
@@ -93,15 +98,16 @@ export default async function Page({
   }>;
 }) {
   const slug = (await params).slug;
-  const post = getPostBySlug(slug);
+  const post = await getPostBySlug(slug);
 
   if (!post) {
     notFound();
   }
 
-  const toc = getTableOfContents(post.content);
+  const { content } = matter(post.content || "");
+  const toc = getTableOfContents(content);
 
-  const allPosts = getAllPosts();
+  const allPosts = await getAllPosts();
   const { previous, next } = findNeighbour(allPosts, slug);
 
   return (
@@ -144,15 +150,15 @@ export default async function Page({
 
       <Prose className="px-4">
         <h1 className="screen-line-before screen-line-after mb-6 font-semibold">
-          {post.metadata.title}
+          {post.title}
         </h1>
 
-        <p className="lead mt-6 mb-6">{post.metadata.description}</p>
+        <p className="lead mt-6 mb-6">{post.description}</p>
 
         <InlineTOC items={toc} />
 
         <div>
-          <MDX code={post.content} />
+          <MDX code={content} />
         </div>
       </Prose>
 
@@ -161,7 +167,25 @@ export default async function Page({
   );
 }
 
-function getPostUrl(post: Post) {
-  const isComponent = post.metadata.category === "components";
+function getPostUrl(post: { category?: string; slug: string }) {
+  const isComponent = post.category === "components";
   return isComponent ? `/components/${post.slug}` : `/blog/${post.slug}`;
+}
+
+function findNeighbour(
+  posts: Awaited<ReturnType<typeof getAllPosts>>,
+  slug: string
+) {
+  const len = posts.length;
+
+  for (let i = 0; i < len; ++i) {
+    if (posts[i].slug === slug) {
+      return {
+        previous: i > 0 ? posts[i - 1] : null,
+        next: i < len - 1 ? posts[i + 1] : null,
+      };
+    }
+  }
+
+  return { previous: null, next: null };
 }

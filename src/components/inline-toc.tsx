@@ -22,11 +22,11 @@ export function InlineTOC({
 
   return (
     <Collapsible
-      className={cn("not-prose rounded-lg bg-code font-sans", className)}
+      className={cn("not-prose my-3 rounded-lg bg-code font-sans", className)}
       {...props}
     >
       <CollapsibleTrigger className="group/toc inline-flex w-full items-center justify-between px-4 py-3 text-sm font-medium">
-        {children ?? "Table of Contents"}
+        {children ?? "Tabela de Conteúdo"}
         <div
           className="shrink-0 text-muted-foreground [&_svg]:size-4"
           aria-hidden

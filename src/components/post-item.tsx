@@ -1,16 +1,15 @@
 import dayjs from "dayjs";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 import { cn } from "@/lib/utils";
-import type { Post } from "@/types/blog";
+import type { SanityPostListItem } from "@/sanity/fetchers";
 
 export function PostItem({
   post,
   shouldPreloadImage,
 }: {
-  post: Post;
+  post: SanityPostListItem;
   shouldPreloadImage?: boolean;
 }) {
   return (
@@ -22,21 +21,22 @@ export function PostItem({
         "sm:nth-[2n+1]:screen-line-before sm:nth-[2n+1]:screen-line-after"
       )}
     >
-      {post.metadata.image && (
-        <div className="relative select-none [&_img]:aspect-1200/630 [&_img]:rounded-xl">
+      {post.image && (
+        <div className="relative select-none overflow-hidden rounded-xl">
           <Image
-            src={post.metadata.image}
-            alt={post.metadata.title}
+            src={post.image}
+            alt={post.title}
             width={1200}
             height={630}
             quality={100}
             priority={shouldPreloadImage}
+            className="aspect-1200/630 w-full rounded-xl object-cover"
             unoptimized
           />
 
           <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-black/10 ring-inset dark:ring-white/10" />
 
-          {post.metadata.new && (
+          {post.new && (
             <span className="absolute top-1.5 right-1.5 rounded-md bg-info px-1.5 font-mono text-sm font-medium text-white text-shadow-xs">
               New
             </span>
@@ -46,14 +46,14 @@ export function PostItem({
 
       <div className="flex flex-col gap-1 p-2">
         <h3 className="text-lg leading-snug font-medium text-balance underline-offset-4 group-hover/post:underline">
-          {post.metadata.title}
+          {post.title}
         </h3>
 
         <div>
           <dt className="sr-only">Published on</dt>
           <dd className="text-sm text-muted-foreground">
-            <time dateTime={dayjs(post.metadata.createdAt).toISOString()}>
-              {dayjs(post.metadata.createdAt).format("DD.MM.YYYY")}
+            <time dateTime={dayjs(post.createdAt).toISOString()}>
+              {dayjs(post.createdAt).format("DD.MM.YYYY")}
             </time>
           </dd>
         </div>

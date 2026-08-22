@@ -1,12 +1,18 @@
 import type { MDXRemoteProps } from "next-mdx-remote/rsc";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import rehypeExternalLinks from "rehype-external-links";
+import matter from "gray-matter";
 import type { LineElement } from "rehype-pretty-code";
 import rehypePrettyCode from "rehype-pretty-code";
 import rehypeSlug from "rehype-slug";
 import remarkGfm from "remark-gfm";
 import { visit } from "unist-util-visit";
 
+import { rehypeFileTree } from "@/lib/rehype-file-tree";
+import { rehypeMermaid } from "@/lib/rehype-mermaid";
+
+import { File, FileTree, FileTreeFromText, Folder } from "./file-tree";
+import { MermaidDiagram } from "./mermaid-diagram";
 import { CodeCollapsibleWrapper } from "@/components/code-collapsible-wrapper";
 import { ComponentPreview } from "@/components/component-preview";
 import { ComponentSource } from "@/components/component-source";
@@ -70,7 +76,6 @@ const components: MDXRemoteProps["components"] = {
     );
   },
   pre({
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     __withMeta__,
     __rawString__,
 
@@ -134,6 +139,20 @@ const components: MDXRemoteProps["components"] = {
       shadcn CLI
     </TabsTrigger>
   ),
+  "file-tree-diagram": ({ treeData }: { treeData?: string }) => {
+    if (!treeData) return null;
+    return <FileTreeFromText treeData={treeData} />;
+  },
+  "mermaid-diagram": ({
+    chart,
+    ...props
+  }: React.ComponentProps<"div"> & { chart?: string }) => {
+    if (!chart) return null;
+    return <MermaidDiagram chart={chart} {...props} />;
+  },
+  FileTree,
+  Folder,
+  File,
 };
 
 const options: MDXRemoteProps["options"] = {
@@ -146,6 +165,8 @@ const options: MDXRemoteProps["options"] = {
       ],
       rehypeSlug,
       rehypeComponent,
+      rehypeFileTree,
+      rehypeMermaid,
       () => (tree) => {
         visit(tree, (node) => {
           if (node?.type === "element" && node?.tagName === "pre") {
@@ -167,8 +188,6 @@ const options: MDXRemoteProps["options"] = {
           },
           keepBackground: false,
           onVisitLine(node: LineElement) {
-            // Prevent lines from collapsing in `display: grid` mode, and allow empty
-            // lines to be copy/pasted
             if (node.children.length === 0) {
               node.children = [{ type: "text", value: " " }];
             }
@@ -200,5 +219,6 @@ const options: MDXRemoteProps["options"] = {
 };
 
 export function MDX({ code }: { code: string }) {
-  return <MDXRemote source={code} components={components} options={options} />;
+  const { content } = matter(code || "");
+  return <MDXRemote source={content} components={components} options={options} />;
 }

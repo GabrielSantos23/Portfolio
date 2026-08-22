@@ -3,8 +3,11 @@ import { Prose } from "@/components/ui/typography";
 import { USER } from "@/data/user";
 
 import { Panel, PanelContent, PanelHeader, PanelTitle } from "./panel";
+import { getProfile } from "@/sanity/fetchers";
 
-export function About() {
+export async function About() {
+  const user = await getProfile();
+  if (!user) return null;
   return (
     <Panel id="about">
       <PanelHeader>
@@ -13,7 +16,7 @@ export function About() {
 
       <PanelContent>
         <Prose>
-          <Markdown>{USER.about}</Markdown>
+          <Markdown>{user.about}</Markdown>
         </Prose>
       </PanelContent>
     </Panel>

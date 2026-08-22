@@ -9,8 +9,8 @@ type Config = {
   installationType: InstallationType;
 };
 
-const configAtom = atomWithStorage<Config>("chanhdai.config", {
-  packageManager: "pnpm",
+const configAtom = atomWithStorage<Config>("gsantos.config", {
+  packageManager: "bun",
   installationType: "cli",
 });
 

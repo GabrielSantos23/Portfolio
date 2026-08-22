@@ -1,25 +1,27 @@
 import { CollapsibleList } from "@/components/collapsible-list";
 
-import { PROJECTS } from "../../data/projects";
+import { getProjects, type SanityProject } from "@/sanity/schemas/lib/profile";
 import { Panel, PanelHeader, PanelTitle } from "../panel";
 import { ProjectItem } from "./project-item";
 
-export function Projects() {
+export async function Projects() {
+  const projects = await getProjects();
+
   return (
     <Panel id="projects">
       <PanelHeader>
         <PanelTitle>
           Projetos
           <sup className="ml-1 font-mono text-sm text-muted-foreground select-none">
-            ({PROJECTS.length})
+            ({projects.length})
           </sup>
         </PanelTitle>
       </PanelHeader>
 
       <CollapsibleList
-        items={PROJECTS}
+        items={projects}
         max={4}
-        renderItem={(item) => <ProjectItem project={item} />}
+        renderItem={(item: SanityProject) => <ProjectItem project={item} />}
       />
     </Panel>
   );

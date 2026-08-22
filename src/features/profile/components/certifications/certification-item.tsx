@@ -7,15 +7,17 @@ import { getIcon, Icons } from "@/components/icons";
 import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
 
-import type { Certification } from "../../types/certifications";
+import type { SanityCertification } from "@/sanity/schemas/lib/profile";
 
 export function CertificationItem({
   className,
   certification,
 }: {
   className?: string;
-  certification: Certification;
+  certification: SanityCertification;
 }) {
+  const logoUrl = certification.issuerLogoUrl;
+
   return (
     <a
       className={cn("group/cert flex items-center pr-2", className)}
@@ -23,9 +25,9 @@ export function CertificationItem({
       target="_blank"
       rel="noopener"
     >
-      {certification.issuerLogoURL ? (
+      {/*{logoUrl ? (
         <Image
-          src={certification.issuerLogoURL}
+          src={logoUrl}
           alt={certification.issuer}
           width={32}
           height={32}
@@ -41,7 +43,7 @@ export function CertificationItem({
         >
           {getIcon(certification.issuerIconName) ?? <Icons.certificate />}
         </div>
-      )}
+      )}*/}
 
       <div className="flex-1 space-y-1 border-l border-dashed border-edge p-4 pr-2">
         <h3 className="leading-snug font-medium text-balance underline-offset-4 group-hover/cert:underline">

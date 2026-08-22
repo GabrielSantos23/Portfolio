@@ -1,10 +1,12 @@
 import React from "react";
 
-import { EXPERIENCES } from "../../data/experiences";
+import { getExperiences } from "@/sanity/schemas/lib/profile";
 import { Panel, PanelHeader, PanelTitle } from "../panel";
 import { ExperienceItem } from "./experience-item";
 
-export function Experiences() {
+export async function Experiences() {
+  const experiences = await getExperiences();
+
   return (
     <Panel id="experience">
       <PanelHeader>
@@ -12,8 +14,8 @@ export function Experiences() {
       </PanelHeader>
 
       <div className="pr-2 pl-4">
-        {EXPERIENCES.map((experience) => (
-          <ExperienceItem key={experience.id} experience={experience} />
+        {experiences.map((experience) => (
+          <ExperienceItem key={experience._id} experience={experience} />
         ))}
       </div>
     </Panel>

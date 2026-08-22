@@ -18,7 +18,7 @@ export function IntroItem({
         <Icon className="pointer-events-none size-4 text-muted-foreground" />
       </div>
 
-      <p className="text-balance">
+      <div className="min-w-0 flex-1 truncate">
         {href ? (
           <a
             className="underline-offset-4 hover:underline"
@@ -31,7 +31,7 @@ export function IntroItem({
         ) : (
           content
         )}
-      </p>
+      </div>
     </div>
   );
 }

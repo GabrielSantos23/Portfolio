@@ -1,17 +1,23 @@
 import Image from "next/image";
 import React from "react";
 
-import type { Experience } from "../../types/experiences";
+import type { SanityExperience } from "@/sanity/schemas/lib/profile";
 import { ExperiencePositionItem } from "./experience-position-item";
 
-export function ExperienceItem({ experience }: { experience: Experience }) {
+export function ExperienceItem({
+  experience,
+}: {
+  experience: SanityExperience;
+}) {
+  const logoUrl = experience.companyLogoUrl;
+
   return (
     <div className="screen-line-after space-y-4 py-4">
       <div className="flex items-center gap-3">
         <div className="flex size-6 shrink-0 items-center justify-center">
-          {experience.companyLogo ? (
+          {/*{logoUrl ? (
             <Image
-              src={experience.companyLogo}
+              src={logoUrl}
               alt={experience.companyName}
               width={24}
               height={24}
@@ -22,7 +28,7 @@ export function ExperienceItem({ experience }: { experience: Experience }) {
             />
           ) : (
             <span className="flex size-2 rounded-full bg-zinc-300 dark:bg-zinc-600" />
-          )}
+          )}*/}
         </div>
 
         <h3 className="text-lg leading-snug font-medium">
@@ -40,7 +46,7 @@ export function ExperienceItem({ experience }: { experience: Experience }) {
 
       <div className="relative space-y-4 before:absolute before:left-3 before:h-full before:w-px before:bg-border">
         {experience.positions.map((position) => (
-          <ExperiencePositionItem key={position.id} position={position} />
+          <ExperiencePositionItem key={position._key} position={position} />
         ))}
       </div>
     </div>

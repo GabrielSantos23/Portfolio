@@ -1,15 +1,15 @@
 import { ArrowRightIcon } from "lucide-react";
 import Link from "next/link";
-import React from "react";
 
 import { PostItem } from "@/components/post-item";
 import { Button } from "@/components/ui/button";
-import { getAllPosts } from "@/data/blog";
+import { getAllPosts } from "@/sanity/fetchers";
 
 import { Panel, PanelHeader, PanelTitle } from "./panel";
 
-export function Blog() {
-  const allPosts = getAllPosts();
+export async function Blog() {
+  const allPosts = await getAllPosts();
+  if (!allPosts?.length) return null;
 
   return (
     <Panel id="blog">

@@ -42,3 +42,9 @@ next-env.d.ts
 
 # ncdai
 .ncdai
+
+# migration & data dumps
+*.ndjson
+migration-*.json
+migration-*.ndjson
+experiences.ndjson

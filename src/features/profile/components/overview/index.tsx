@@ -9,14 +9,17 @@ import { IntroItem } from "./intro-item";
 import { JobItem } from "./job-item";
 import { PhoneItem } from "./phone-item";
 import { SpotifyNowPlaying } from "./spotify-now-playing";
+import { getProfile } from "@/sanity/fetchers";
 
-export function Overview() {
+export async function Overview() {
+  const user = await getProfile();
+  if (!user) return null;
   return (
     <Panel>
       <h2 className="sr-only">Overview</h2>
 
       <PanelContent className="space-y-2">
-        {USER.jobs.map((job, index) => {
+        {/* {user.jobs.map((job, index) => {
           return (
             <JobItem
               key={index}
@@ -25,18 +28,18 @@ export function Overview() {
               website={job.website}
             />
           );
-        })}
+        })} */}
 
-        <IntroItem icon={MapPinIcon} content={USER.address} />
+        <IntroItem icon={MapPinIcon} content={user.address} />
 
-        <PhoneItem phoneNumber={USER.phoneNumber} />
+        <PhoneItem phoneNumber={user.phoneNumber} />
 
-        <EmailItem email={USER.email} />
+        <EmailItem email={user.email} />
 
         <IntroItem
           icon={GlobeIcon}
-          content={urlToName(USER.website)}
-          href={USER.website}
+          content={urlToName(user.website)}
+          href={user.website}
         />
 
         <SpotifyNowPlaying />

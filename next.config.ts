@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   transpilePackages: ["next-mdx-remote"],
-  allowedDevOrigins: ["chanhdai-macbook.local"],
+  allowedDevOrigins: ["localhost"],
   devIndicators: false,
   images: {
     remotePatterns: [
@@ -17,7 +17,13 @@ const nextConfig: NextConfig = {
         hostname: "i.scdn.co",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "cdn.sanity.io",
+        port: "",
+      },
     ],
+    qualities: [100, 75],
   },
   async rewrites() {
     return [

@@ -1,13 +1,14 @@
 import Image from "next/image";
-import React from "react";
 
 import { SimpleTooltip } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
+import { getTechStack } from "@/sanity/fetchers";
 
-import { TECH_STACK } from "../data/tech-stack";
 import { Panel, PanelContent, PanelHeader, PanelTitle } from "./panel";
 
-export function TeckStack() {
+export async function TeckStack() {
+  const techStack = await getTechStack();
+  if (!techStack) return null;
   return (
     <Panel id="stack">
       <PanelHeader>
@@ -22,9 +23,9 @@ export function TeckStack() {
         )}
       >
         <ul className="flex flex-wrap gap-4 select-none">
-          {TECH_STACK.map((tech) => {
+          {techStack.map((tech) => {
             return (
-              <li key={tech.key} className="flex bg-card rounded-md">
+              <li key={tech.key} className="flex rounded-md bg-card">
                 <SimpleTooltip content={tech.title}>
                   <a
                     href={tech.href}
@@ -32,34 +33,35 @@ export function TeckStack() {
                     rel="noopener noreferrer"
                     aria-label={tech.title}
                   >
-                    {tech.theme ? (
+                    {tech.theme && tech.iconLightUrl && tech.iconDarkUrl ? (
                       <>
                         <Image
-                          src={`https://assets.gsantos.site/images/tech-stack-icons/${tech.key}.svg`}
+                          src={tech.iconLightUrl}
                           alt={`${tech.title} light icon`}
                           width={32}
                           height={32}
-                          className="hidden [html.light_&]:block"
+                          className="hidden size-8 object-contain [html.light_&]:block"
                           unoptimized
                         />
                         <Image
-                          src={`https://assets.gsantos.site/images/tech-stack-icons/${tech.key}.svg`}
+                          src={tech.iconDarkUrl}
                           alt={`${tech.title} dark icon`}
                           width={32}
                           height={32}
-                          className="hidden [html.dark_&]:block invert"
+                          className="hidden size-8 object-contain [html.dark_&]:block"
                           unoptimized
                         />
                       </>
-                    ) : (
+                    ) : tech.iconUrl ? (
                       <Image
-                        src={`https://assets.gsantos.site/images/tech-stack-icons/${tech.key}.svg`}
+                        src={tech.iconUrl}
                         alt={`${tech.title} icon`}
                         width={32}
                         height={32}
+                        className="size-8 object-contain"
                         unoptimized
                       />
-                    )}
+                    ) : null}
                     <span className="sr-only">{tech.title}</span>
                   </a>
                 </SimpleTooltip>

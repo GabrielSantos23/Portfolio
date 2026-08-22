@@ -20,25 +20,26 @@ import { Prose } from "@/components/ui/typography";
 import { UTM_PARAMS } from "@/config/site";
 import { addQueryParams } from "@/utils/url";
 
-import type { Project } from "../../types/projects";
+import type { SanityProject } from "@/sanity/schemas/lib/profile";
 
 export function ProjectItem({
   className,
   project,
 }: {
   className?: string;
-  project: Project;
+  project: SanityProject;
 }) {
-  const { start, end } = project.period;
+  const { periodStart: start, periodEnd: end } = project;
   const isOngoing = !end;
+  const logoUrl = project.logoUrl;
 
   return (
     <Collapsible defaultOpen={project.isExpanded} asChild>
       <div className={className}>
         <div className="flex items-center">
-          {project.logo ? (
+          {logoUrl ? (
             <Image
-              src={project.logo}
+              src={logoUrl}
               alt={project.title}
               width={32}
               height={32}
@@ -113,7 +114,7 @@ export function ProjectItem({
               </Prose>
             )}
 
-            {project.skills.length > 0 && (
+            {project.skills && project.skills.length > 0 && (
               <ul className="flex flex-wrap gap-1.5">
                 {project.skills.map((skill, index) => (
                   <li key={index} className="flex">

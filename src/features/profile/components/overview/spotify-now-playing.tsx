@@ -33,27 +33,23 @@ export function SpotifyNowPlaying() {
   if (!data) {
     return <IntroItem icon={Music2Icon} content="Carregando música atual…" />;
   }
-
-  // Animated Spotify icon with pulsing animation when playing
   const SpotifyIcon = () => (
     <div className="relative">
-      <AiOutlineSpotify 
+      <AiOutlineSpotify
         className={`${
           data.isPlaying ? "text-green-500" : "text-gray-500"
-        } pointer-events-none size-4 ${
-          data.isPlaying ? "animate-pulse" : ""
-        }`} 
+        } pointer-events-none size-4 ${data.isPlaying ? "animate-pulse" : ""}`}
       />
-   
     </div>
   );
 
   if (data.isPlaying) {
     const songContent = (
-      <div className="flex gap-2">
-        <span className="text-green-500 font-medium">{data.title}</span>
-        <span className="text-sm text-gray-400">por {data.artist}</span>
-      </div>
+      <span className="truncate">
+        <span className="mr-1.5 shrink-0 font-medium">Ouvindo:</span>
+        <span className="text-sm text-green-500">{data.title}</span>
+        <span className="ml-1.5 text-sm text-gray-400">por {data.artist}</span>
+      </span>
     );
 
     return (
@@ -79,8 +75,8 @@ export function SpotifyNowPlaying() {
         icon={SpotifyIcon}
         content={
           <div className="flex gap-2">
-            <span className="text-xs text-muted-foreground ">🎧 </span>
-            <span>Não está tocando • Ver perfil</span>
+            <span className="text-xs text-muted-foreground">🎧 </span>
+            <span>Não estou ouvindo nada agora • Ver perfil</span>
           </div>
         }
         href={USER.spotifyUrl}

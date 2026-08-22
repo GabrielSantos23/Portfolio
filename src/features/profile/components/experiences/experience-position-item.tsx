@@ -15,19 +15,18 @@ import { Separator } from "@/components/ui/separator";
 import { Tag } from "@/components/ui/tag";
 import { Prose } from "@/components/ui/typography";
 
-import type { ExperiencePosition } from "../../types/experiences";
+import type { SanityExperience } from "@/sanity/schemas/lib/profile";
 import { ExperienceIcon } from "./experience-position-icon";
 
-export function ExperiencePositionItem({
-  position,
-}: {
-  position: ExperiencePosition;
-}) {
-  const { start, end } = position.employmentPeriod;
+type Position = SanityExperience["positions"][number];
+
+export function ExperiencePositionItem({ position }: { position: Position }) {
+  const start = position.employmentPeriodStart;
+  const end = position.employmentPeriodEnd;
   const isOngoing = !end;
 
   return (
-    <Collapsible defaultOpen={position.isExpanded} asChild>
+    <Collapsible defaultOpen={false} asChild>
       <div className="relative last:before:absolute last:before:h-full last:before:w-4 last:before:bg-background">
         <CollapsibleTrigger className="group/experience block w-full text-left select-none">
           <div className="relative z-1 mb-1 flex items-center gap-3 bg-background">
