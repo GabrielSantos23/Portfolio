@@ -1,0 +1,41 @@
+title: Alternatives to Jev
+excerpt: A month after Jev, there are over twenty decision models you can call or self-host, and most beat Jev on its own benchmark. What each is and how to choose.
+publishedAt: 2026-10-15T23:00:00.000Z
+updatedAt: '2026-10-22'
+readTime: 9
+type: ai
+tags:
+  - AI
+  - Decision Models
+  - Jev
+  - Open Source
+  - Self-Hosting
+headings:
+  - level: '2'
+    id: what-you-are-replacing
+    text: What you are replacing
+  - level: '2'
+    id: three-ways-to-build-one
+    text: Three ways to build one
+  - level: '2'
+    id: the-ones-you-can-run-yourself
+    text: The ones you can run yourself
+  - level: '2'
+    id: the-ones-you-call
+    text: The ones you call
+  - level: '2'
+    id: what-has-actually-been-measured
+    text: What has actually been measured
+  - level: '2'
+    id: what-one-of-them-looks-like-in-practice
+    text: What one of them looks like in practice
+  - level: '2'
+    id: how-id-choose
+    text: How I'd choose
+  - level: '2'
+    id: the-honest-limits
+    text: The honest limits
+related:
+  - building-a-temporary-email-service
+  - the-21st-visitor-broke-live-mail
+  - privacy-filters-for-ai-agents

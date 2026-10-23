@@ -1,0 +1,38 @@
+title: A Model That Decides for You
+excerpt: Most model calls in a product are multiple-choice questions. A decision model answers in one pass, with a probability. I ran one on a four-core VPS.
+publishedAt: 2026-10-15T22:50:00.000Z
+updatedAt: '2026-10-22'
+readTime: 12
+type: ai
+tags:
+  - AI
+  - Decision Models
+  - Laya
+  - Self-Hosting
+  - Performance
+headings:
+  - level: '2'
+    id: a-question-with-a-fixed-set-of-answers
+    text: A question with a fixed set of answers
+  - level: '2'
+    id: try-it-a-support-inbox
+    text: 'Try it: a support inbox'
+  - level: '2'
+    id: where-the-time-goes
+    text: Where the time goes
+  - level: '2'
+    id: half-the-memory-the-same-answers
+    text: Half the memory, the same answers
+  - level: '3'
+    id: the-peak-nobody-measures
+    text: The peak nobody measures
+  - level: '2'
+    id: keeping-a-shared-model-up
+    text: Keeping a shared model up
+  - level: '2'
+    id: the-honest-limits-1
+    text: The honest limits
+related:
+  - clear-proxy-for-ai-agents
+  - red-teaming-ai-agents
+  - generative-colorfield-colors-of-motion

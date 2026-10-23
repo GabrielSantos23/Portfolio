@@ -1,0 +1,38 @@
+title: A Repository Layer for Drizzle
+excerpt: Fifteen identical repository files and thirty as-any casts in an ORM sold on type safety. Better Drizzle exists because everyone writes that layer by hand.
+publishedAt: 2026-07-15T23:00:00.000Z
+updatedAt: '2026-10-22'
+readTime: 12
+type: code
+tags:
+  - Drizzle
+  - ORM
+  - TypeScript
+  - Open Source
+  - Postgres
+headings:
+  - level: '2'
+    id: drizzles-answer-is-that-its-my-fault
+    text: Drizzle's answer is that it's my fault
+  - level: '2'
+    id: what-better-drizzle-is
+    text: What Better Drizzle is
+  - level: '2'
+    id: the-core-already-agreed-with-itself
+    text: The core already agreed with itself
+  - level: '2'
+    id: where-the-correlation-died
+    text: Where the correlation died
+  - level: '2'
+    id: whats-actually-still-missing
+    text: What's actually still missing
+  - level: '2'
+    id: where-this-argument-is-weakest
+    text: Where this argument is weakest
+  - level: '2'
+    id: the-report-that-was-already-filed
+    text: The report that was already filed
+related:
+  - non-custodial-payment-gateway
+  - a-book-in-twenty-five-faces
+  - a-url-that-speaks-markdown

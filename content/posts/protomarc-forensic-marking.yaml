@@ -1,0 +1,41 @@
+title: Watermarks That Trace Leaks
+excerpt: Protomarc marks images, video, audio and PDF so a file can prove who owns it and, if it leaks, point back to whoever it was given to.
+publishedAt: 2026-07-04T23:00:00.000Z
+updatedAt: '2026-10-15'
+readTime: 11
+type: article
+tags:
+  - Forensic Marking
+  - Watermarking
+  - Media
+  - Content Protection
+  - Attribution
+headings:
+  - level: '2'
+    id: the-problem
+    text: The problem
+  - level: '2'
+    id: what-protomarc-does
+    text: What Protomarc does
+  - level: '2'
+    id: attribution-and-accusation
+    text: Attribution and accusation
+  - level: '2'
+    id: a-marked-example
+    text: A marked example
+  - level: '2'
+    id: what-a-marked-copy-looks-like
+    text: What a marked copy looks like
+  - level: '2'
+    id: marks-a-person-can-read
+    text: Marks a person can read
+  - level: '2'
+    id: the-hard-parts
+    text: The hard parts
+  - level: '2'
+    id: where-it-is-going
+    text: Where it is going
+related:
+  - building-a-temporary-email-service
+  - the-21st-visitor-broke-live-mail
+  - privacy-filters-for-ai-agents

@@ -1,0 +1,47 @@
+title: A Non-Custodial Payment Gateway
+excerpt: 'A payment processor holds your money for a moment. Paybit deletes that moment: a non-custodial crypto gateway that splits every payment on-chain.'
+publishedAt: 2026-07-09T23:00:00.000Z
+updatedAt: '2026-10-22'
+readTime: 14
+type: article
+tags:
+  - Payments
+  - Crypto
+  - Non-custodial
+  - Smart Contracts
+  - Bitcoin
+headings:
+  - level: '2'
+    id: most-crypto-gateways-are-banks-with-extra-steps
+    text: Most "crypto gateways" are banks with extra steps
+  - level: '2'
+    id: here-is-the-thing-itself
+    text: Here is the thing itself
+  - level: '2'
+    id: the-split-happens-on-the-chain-not-in-an-account
+    text: The split happens on the chain, not in an account
+  - level: '2'
+    id: nobody-in-the-flow-can-point-the-money-somewhere-else
+    text: Nobody in the flow can point the money somewhere else
+  - level: '2'
+    id: bitcoin-has-no-contracts
+    text: Bitcoin has no contracts
+  - level: '2'
+    id: watching-without-holding
+    text: Watching without holding
+  - level: '2'
+    id: the-money-math-kept-honest
+    text: The money math, kept honest
+  - level: '2'
+    id: verify-do-not-trust
+    text: Verify, do not trust
+  - level: '2'
+    id: the-honest-limits-1
+    text: The honest limits
+  - level: '2'
+    id: the-trade
+    text: The trade
+related:
+  - a-url-that-speaks-markdown
+  - a-book-in-twenty-five-faces
+  - a-wrapper-is-a-bug-report

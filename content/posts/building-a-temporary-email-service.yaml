@@ -1,0 +1,40 @@
+title: Building a Temporary Email Service
+excerpt: 'A temporary inbox takes mail from anyone, for anyone, with no account. How Buzontemporal runs on Mailingest: no attachments, a light path, hard limits.'
+publishedAt: 2026-10-22T22:50:00.000Z
+readTime: 15
+type: code
+tags:
+  - Email
+  - Security
+  - Rust
+  - Mailingest
+  - SMTP
+headings:
+  - level: '2'
+    id: who-talks-to-whom
+    text: Who talks to whom
+  - level: '2'
+    id: the-address-is-the-password
+    text: The address is the password
+  - level: '2'
+    id: whose-mail-it-is
+    text: Whose mail it is
+  - level: '2'
+    id: a-mailbox-with-no-attachments
+    text: A mailbox with no attachments
+  - level: '2'
+    id: the-light-path
+    text: The light path
+  - level: '2'
+    id: addresses-that-receive-nothing
+    text: Addresses that receive nothing
+  - level: '2'
+    id: limits-that-hold-across-replicas
+    text: Limits that hold across replicas
+  - level: '2'
+    id: what-the-visitor-gives-up
+    text: What the visitor gives up
+related:
+  - pixel-art-ai-assistant
+  - building-a-better-whatsapp-sdk
+  - datamuro-data-seal

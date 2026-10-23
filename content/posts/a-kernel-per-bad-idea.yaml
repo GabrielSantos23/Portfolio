@@ -1,0 +1,47 @@
+title: Sandboxing Agent Code in MicroVMs
+excerpt: My agents write code nobody reads, then want to run it. So each run gets a Firecracker microVM on a box I own, bounded by a guest kernel, not a promise.
+publishedAt: 2026-07-17T23:00:00.000Z
+updatedAt: '2026-10-15'
+readTime: 15
+type: code
+tags:
+  - Firecracker
+  - AI Agents
+  - Security
+  - Go
+  - Self-hosting
+headings:
+  - level: '2'
+    id: why-the-obvious-answers-didnt-fit
+    text: Why the obvious answers didn't fit
+  - level: '2'
+    id: one-kernel-per-run
+    text: One kernel per run
+  - level: '2'
+    id: the-network-is-where-an-agent-actually-hurts-you
+    text: The network is where an agent actually hurts you
+  - level: '2'
+    id: limits-the-guest-cannot-argue-with
+    text: Limits the guest cannot argue with
+  - level: '2'
+    id: no-network-path-into-the-guest
+    text: No network path into the guest
+  - level: '2'
+    id: secrets-dont-live-in-the-guest
+    text: Secrets don't live in the guest
+  - level: '2'
+    id: telling-the-agent-why-its-code-stopped
+    text: Telling the agent why its code stopped
+  - level: '2'
+    id: what-an-agent-actually-calls
+    text: What an agent actually calls
+  - level: '2'
+    id: the-honest-limits
+    text: The honest limits
+  - level: '2'
+    id: what-i-actually-bought
+    text: What I actually bought
+related:
+  - building-a-temporary-email-service
+  - the-21st-visitor-broke-live-mail
+  - privacy-filters-for-ai-agents

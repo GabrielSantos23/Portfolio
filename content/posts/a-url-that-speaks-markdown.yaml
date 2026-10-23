@@ -1,0 +1,38 @@
+title: A URL That Speaks Markdown
+excerpt: 'This article is also a plain markdown file, a .md away: content negotiation that serves the same writing to people and to machines from one source.'
+publishedAt: 2026-07-11T23:00:00.000Z
+updatedAt: '2026-10-22'
+readTime: 9
+type: code
+tags:
+  - LLMs
+  - Next.js
+  - Content Negotiation
+  - Markdown
+  - SEO
+headings:
+  - level: '2'
+    id: the-markdown-was-always-the-source
+    text: The markdown was always the source
+  - level: '2'
+    id: two-representations-one-resource
+    text: Two representations, one resource
+  - level: '2'
+    id: catching-the-suffix
+    text: Catching the suffix
+  - level: '2'
+    id: one-builder-two-readers
+    text: One builder, two readers
+  - level: '2'
+    id: what-the-machine-gets-now
+    text: What the machine gets now
+  - level: '2'
+    id: where-the-seams-were
+    text: Where the seams were
+  - level: '2'
+    id: the-plain-render
+    text: The plain render
+related:
+  - non-custodial-payment-gateway
+  - a-book-in-twenty-five-faces
+  - a-wrapper-is-a-bug-report

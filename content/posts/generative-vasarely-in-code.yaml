@@ -1,0 +1,41 @@
+title: Generating Vasarely in Code
+excerpt: 'Victor Vasarely''s Vega-Nor rebuilt as a pure TypeScript function: OKLab paint ramps, an area-conserving spherical warp, and colorways from a seed.'
+publishedAt: 2026-07-04T22:30:00.000Z
+updatedAt: '2026-10-14'
+readTime: 5
+type: art
+tags:
+  - Generative Art
+  - SVG
+  - OKLab
+  - TypeScript
+  - Vasarely
+headings:
+  - level: '2'
+    id: the-shape-of-the-problem
+    text: The shape of the problem
+  - level: '2'
+    id: color-lives-in-oklab-and-it-bands
+    text: Color lives in OKLab, and it bands
+  - level: '2'
+    id: the-bulge-warps-the-sheet-it-isnt-a-ball-on-top
+    text: The bulge warps the sheet, it isn't a ball on top
+  - level: '2'
+    id: determinism-hashes-never-mathrandom
+    text: 'Determinism: hashes, never Math.random'
+  - level: '2'
+    id: a-palette-from-a-string
+    text: A palette from a string
+  - level: '2'
+    id: one-recipe-many-colorways
+    text: One recipe, many colorways
+  - level: '2'
+    id: beyond-the-sphere
+    text: Beyond the sphere
+  - level: '2'
+    id: why-bother
+    text: Why bother
+related:
+  - generative-colorfield-colors-of-motion
+  - building-a-temporary-email-service
+  - the-21st-visitor-broke-live-mail

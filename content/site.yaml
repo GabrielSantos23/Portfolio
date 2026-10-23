@@ -1,0 +1,29 @@
+newsletterTitle: Stay Updated
+newsletterText: I'll only send emails when I publish something interesting or update a download or project.
+emailPlaceholder: your@email.com
+subscribeLabel: Subscribe
+links:
+  - label: GitHub
+    href: https://github.com/pablofdezr
+    icon: github
+  - label: '@pablofdrz'
+    href: https://x.com/pablofdrz
+    icon: none
+  - label: Email
+    href: mailto:pablofdezruiz@gmail.com
+    icon: mail
+  - label: LinkedIn
+    href: https://www.linkedin.com/in/pablofdrz
+    icon: linkedin
+  - label: RSS
+    href: https://www.pablofr.com/rss.xml
+    icon: rss
+musicPlayingLabel: Listening now
+musicLastPlayedLabel: Last played
+musicIdleText: Not playing music right now
+siteName: pablofr.com
+locationPrefix: Based in
+location: Sevilla
+locationHref: https://www.google.com/maps/place/Sevilla/
+locationSuffix: / remote
+timeZone: Europe/Madrid

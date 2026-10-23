@@ -1,0 +1,38 @@
+title: k3s vs k0s vs Kubernetes
+excerpt: All three pass the same conformance tests. What separates them is everything between an API server and an HTTPS URL, and that's why pfrctl runs k3s.
+publishedAt: 2026-10-19T23:00:00.000Z
+updatedAt: '2026-10-22'
+readTime: 10
+type: article
+tags:
+  - Kubernetes
+  - k3s
+  - k0s
+  - Self-hosting
+  - Infrastructure
+headings:
+  - level: '2'
+    id: three-names-one-api
+    text: Three names, one API
+  - level: '2'
+    id: kubeadm-every-choice-is-yours
+    text: 'kubeadm: every choice is yours'
+  - level: '2'
+    id: k0s-upstream-packed-unopinionated
+    text: 'k0s: upstream, packed, unopinionated'
+  - level: '2'
+    id: k3s-the-batteries-are-in
+    text: 'k3s: the batteries are in'
+  - level: '2'
+    id: side-by-side
+    text: Side by side
+  - level: '2'
+    id: why-pfrctl-runs-k3s
+    text: Why pfrctl runs k3s
+  - level: '2'
+    id: which-one-to-pick
+    text: Which one to pick
+related:
+  - two-builds-one-address
+  - building-a-temporary-email-service
+  - the-21st-visitor-broke-live-mail

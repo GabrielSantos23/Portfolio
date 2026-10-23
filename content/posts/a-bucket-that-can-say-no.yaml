@@ -1,0 +1,40 @@
+title: S3 Conditional Writes
+excerpt: For eighteen years S3 couldn't tell two writers apart. In August 2024 it learned to refuse a write, and systems began moving commit logs into buckets.
+publishedAt: 2026-07-29T23:00:00.000Z
+updatedAt: '2026-10-22'
+readTime: 10
+type: article
+tags:
+  - Object storage
+  - S3
+  - Databases
+  - Distributed systems
+headings:
+  - level: '2'
+    id: what-a-bucket-could-not-do
+    text: What a bucket could not do
+  - level: '2'
+    id: the-header-that-changed-it
+    text: The header that changed it
+  - level: '2'
+    id: a-1995-algorithm-with-a-new-instruction
+    text: A 1995 algorithm with a new instruction
+  - level: '2'
+    id: the-shape-everyone-lands-on
+    text: The shape everyone lands on
+  - level: '2'
+    id: kafka-voted-for-it
+    text: Kafka voted for it
+  - level: '2'
+    id: where-it-stops
+    text: Where it stops
+  - level: '2'
+    id: the-numbers-i-could-not-check
+    text: The numbers I could not check
+  - level: '2'
+    id: what-one-header-bought
+    text: What one header bought
+related:
+  - per-file-encryption-keys
+  - vector-search-on-object-storage
+  - building-a-temporary-email-service

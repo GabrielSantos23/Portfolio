@@ -1,0 +1,42 @@
+title: Four Layers of What an Agent Knows
+excerpt: One AI agent, many companies, many people. Its knowledge comes in stacked layers, and the work is keeping each layer from leaking past who it belongs to.
+publishedAt: 2026-10-21T21:10:00.000Z
+updatedAt: '2026-10-22'
+readTime: 14
+type: ai
+tags:
+  - AI
+  - Agents
+  - Memory
+  - Postgres
+  - Row-Level Security
+  - Multi-Tenancy
+headings:
+  - level: '2'
+    id: the-four-layers
+    text: The four layers
+  - level: '2'
+    id: its-own-tables-because-staff-write-it
+    text: Its own tables, because staff write it
+  - level: '3'
+    id: a-layer-that-knows-what-day-it-is
+    text: A layer that knows what day it is
+  - level: '2'
+    id: one-table-because-only-the-reader-changes
+    text: One table, because only the reader changes
+  - level: '2'
+    id: where-a-new-memory-lands
+    text: Where a new memory lands
+  - level: '2'
+    id: stacking-them-in-one-answer
+    text: Stacking them in one answer
+  - level: '3'
+    id: when-the-layers-disagree
+    text: When the layers disagree
+  - level: '2'
+    id: the-rule-underneath
+    text: The rule underneath
+related:
+  - a-model-that-decides-for-you
+  - anatomy-of-a-payments-api
+  - building-a-temporary-email-service

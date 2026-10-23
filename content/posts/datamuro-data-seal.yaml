@@ -1,0 +1,44 @@
+title: An Anti-Scraping Seal
+excerpt: A price on a page is a fact someone paid to produce, public for anything to copy. I'm building an anti-bot seal to change what that copy costs.
+publishedAt: 2026-07-07T23:00:00.000Z
+updatedAt: '2026-10-22'
+readTime: 8
+type: article
+tags:
+  - Anti-bot
+  - Scraping
+  - Proof of Work
+  - Web Security
+  - Datamuro
+headings:
+  - level: '2'
+    id: the-data-is-the-product
+    text: The data is the product
+  - level: '2'
+    id: guessing-whos-asking
+    text: Guessing who's asking
+  - level: '2'
+    id: leave-it-in-place-but-seal-it
+    text: Leave it in place, but seal it
+  - level: '2'
+    id: same-url-two-readers
+    text: Same URL, two readers
+  - level: '2'
+    id: the-flow-end-to-end
+    text: The flow, end to end
+  - level: '2'
+    id: raise-the-cost-not-the-wall
+    text: Raise the cost, not the wall
+  - level: '2'
+    id: where-the-line-is
+    text: Where the line is
+  - level: '2'
+    id: where-scale-still-wins
+    text: Where scale still wins
+  - level: '2'
+    id: the-trade-1
+    text: The trade
+related:
+  - clear-proxy-for-ai-agents
+  - agent-memory-across-channels
+  - resumable-ai-responses

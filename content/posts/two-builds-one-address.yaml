@@ -1,0 +1,56 @@
+title: Skew Protection for Next.js
+excerpt: 'Every deploy strands open tabs asking for chunks only the old build had. My skew protection for self-hosted Next.js on k3s: a Go router that pins each tab.'
+publishedAt: 2026-10-10T22:40:00.000Z
+updatedAt: '2026-10-15'
+readTime: 12
+type: code
+tags:
+  - Next.js
+  - Kubernetes
+  - Go
+  - Self-hosting
+  - Deployments
+headings:
+  - level: '2'
+    id: why-the-usual-fixes-fall-short
+    text: Why the usual fixes fall short
+  - level: '2'
+    id: the-id-nextjs-already-sends
+    text: The id Next.js already sends
+  - level: '2'
+    id: five-answers-to-one-question
+    text: Five answers to one question
+  - level: '2'
+    id: the-active-build-is-a-pointer
+    text: The active build is a pointer
+  - level: '2'
+    id: how-long-an-old-build-lives
+    text: How long an old build lives
+  - level: '2'
+    id: a-security-fix-cant-wait-an-hour
+    text: A security fix can't wait an hour
+  - level: '2'
+    id: many-replicas-one-writer
+    text: Many replicas, one writer
+  - level: '2'
+    id: what-went-wrong-on-the-first-day
+    text: What went wrong on the first day
+  - level: '2'
+    id: what-the-router-costs-and-how-to-make-it-free
+    text: What the router costs, and how to make it free
+  - level: '2'
+    id: every-route-keeps-its-protections
+    text: Every route keeps its protections
+  - level: '2'
+    id: the-contract-it-creates
+    text: The contract it creates
+  - level: '2'
+    id: where-it-isnt-worth-it
+    text: Where it isn't worth it
+  - level: '2'
+    id: the-trade
+    text: The trade
+related:
+  - building-a-temporary-email-service
+  - the-21st-visitor-broke-live-mail
+  - privacy-filters-for-ai-agents

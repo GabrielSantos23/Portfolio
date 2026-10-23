@@ -1,0 +1,43 @@
+title: The 21st Visitor Broke Live Mail
+excerpt: Buzontemporal's live inbox held one Mailingest stream per visitor, and Mailingest allows 20 per account. Why raising the cap wasn't the fix, and how Centrifugo was.
+publishedAt: 2026-10-22T23:00:00.000Z
+readTime: 9
+type: code
+tags:
+  - Realtime
+  - SSE
+  - Centrifugo
+  - NATS
+  - Mailingest
+headings:
+  - level: '2'
+    id: one-stream-per-visitor
+    text: One stream per visitor
+  - level: '2'
+    id: the-limit-that-did-its-job
+    text: The limit that did its job
+  - level: '2'
+    id: raising-the-number-doesnt-help
+    text: Raising the number doesn't help
+  - level: '2'
+    id: option-one-multiplex-it-yourself
+    text: 'Option one: multiplex it yourself'
+  - level: '2'
+    id: option-two-a-push-server
+    text: 'Option two: a push server'
+  - level: '2'
+    id: how-its-wired
+    text: How it's wired
+  - level: '2'
+    id: a-token-for-one-channel
+    text: A token for one channel
+  - level: '2'
+    id: what-it-cost
+    text: What it cost
+  - level: '2'
+    id: counting-the-right-thing
+    text: Counting the right thing
+related:
+  - tool-permissions-for-ai-agents
+  - reading-documents-with-ai
+  - deterministic-rules-for-ai-agents

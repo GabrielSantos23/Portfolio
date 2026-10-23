@@ -1,0 +1,47 @@
+title: Waking Apps on Demand
+excerpt: A stopped container frees memory but drops its route. WOC, a small Go proxy, keeps the route up, wakes the app on the first request and sleeps it again.
+publishedAt: 2026-10-09T23:00:00.000Z
+updatedAt: '2026-10-22'
+readTime: 15
+type: code
+tags:
+  - Docker
+  - Traefik
+  - Go
+  - Self-hosting
+  - Scale to zero
+headings:
+  - level: '2'
+    id: the-honest-answer-first
+    text: The honest answer first
+  - level: '2'
+    id: why-stopping-a-container-breaks-it
+    text: Why stopping a container breaks it
+  - level: '2'
+    id: the-route-lives-in-the-thing-that-never-sleeps
+    text: The route lives in the thing that never sleeps
+  - level: '2'
+    id: asleep-waking-awake
+    text: Asleep, waking, awake
+  - level: '2'
+    id: holding-the-socket-without-holding-the-machine
+    text: Holding the socket without holding the machine
+  - level: '2'
+    id: from-a-second-to-a-quarter-of-one
+    text: From a second to a quarter of one
+  - level: '2'
+    id: a-page-for-the-slow-ones
+    text: A page for the slow ones
+  - level: '2'
+    id: the-database-sleeps-too
+    text: The database sleeps too
+  - level: '2'
+    id: where-it-isnt-worth-it
+    text: Where it isn't worth it
+  - level: '2'
+    id: the-trade
+    text: The trade
+related:
+  - building-a-temporary-email-service
+  - the-21st-visitor-broke-live-mail
+  - privacy-filters-for-ai-agents

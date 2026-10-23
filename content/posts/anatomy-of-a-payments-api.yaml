@@ -1,0 +1,47 @@
+title: Designing a Payments API
+excerpt: Taking a payment is four lines. Making a retry never double-charge and a lost webhook never lose an order is the real work. How I shaped Paybit's API.
+publishedAt: 2026-07-10T22:50:00.000Z
+updatedAt: '2026-10-22'
+readTime: 10
+type: article
+tags:
+  - APIs
+  - Payments
+  - Crypto
+  - Idempotency
+  - Webhooks
+headings:
+  - level: '2'
+    id: the-dangerous-part-is-the-second-request
+    text: The dangerous part is the second request
+  - level: '2'
+    id: copy-the-shape-it-encodes-the-answers
+    text: Copy the shape, it encodes the answers
+  - level: '2'
+    id: a-payment-intent-is-a-state-machine-not-a-row-you-edit
+    text: A payment intent is a state machine, not a row you edit
+  - level: '2'
+    id: the-same-request-twice-is-the-same-result
+    text: The same request twice is the same result
+  - level: '2'
+    id: errors-are-data-not-prose
+    text: Errors are data, not prose
+  - level: '2'
+    id: the-log-is-the-truth-the-webhook-is-only-a-courier
+    text: The log is the truth, the webhook is only a courier
+  - level: '2'
+    id: keys-that-are-hashed-scoped-and-shown-once
+    text: Keys that are hashed, scoped, and shown once
+  - level: '2'
+    id: a-client-you-do-not-hand-write
+    text: A client you do not hand-write
+  - level: '2'
+    id: the-honest-limits
+    text: The honest limits
+  - level: '2'
+    id: the-surface-is-small-on-purpose
+    text: The surface is small on purpose
+related:
+  - building-a-temporary-email-service
+  - the-21st-visitor-broke-live-mail
+  - privacy-filters-for-ai-agents

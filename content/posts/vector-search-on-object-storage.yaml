@@ -1,0 +1,35 @@
+title: Vector Search on S3
+excerpt: I forked VecPuff to keep one bit per dimension resident, so search over vectors in S3 fetches one in full only when the cheap guess is too close to call.
+publishedAt: 2026-07-13T22:50:00.000Z
+updatedAt: '2026-10-15'
+readTime: 8
+type: code
+tags:
+  - Vector search
+  - Object storage
+  - Quantization
+  - Rust
+  - ANN
+headings:
+  - level: '2'
+    id: why-a-naive-query-touches-every-vector
+    text: Why a naive query touches every vector
+  - level: '2'
+    id: one-bit-per-dimension
+    text: One bit per dimension
+  - level: '2'
+    id: guess-with-the-bits-pay-for-the-vector
+    text: Guess with the bits, pay for the vector
+  - level: '2'
+    id: where-the-full-vectors-actually-live
+    text: Where the full vectors actually live
+  - level: '2'
+    id: what-the-numbers-actually-say
+    text: What the numbers actually say
+  - level: '2'
+    id: the-trade-restated-1
+    text: The trade, restated
+related:
+  - an-approximation-that-never-decides
+  - generative-vasarely-in-code
+  - building-a-temporary-email-service

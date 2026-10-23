@@ -1,0 +1,38 @@
+title: An Agent Plan That Runs Exactly Once
+excerpt: An AI agent that issues an invoice can't take a step back. How Sumalos turns its plan into a preview, a confirmation, steps that run once, and an undo.
+publishedAt: 2026-10-21T22:30:00.000Z
+updatedAt: '2026-10-22'
+readTime: 11
+type: ai
+tags:
+  - AI
+  - Agents
+  - Idempotency
+  - Redis
+  - Postgres
+headings:
+  - level: '2'
+    id: one-plan-one-preview
+    text: One plan, one preview
+  - level: '2'
+    id: a-yes-that-only-one-person-can-give
+    text: A yes that only one person can give
+  - level: '2'
+    id: running-it-once-from-four-directions
+    text: Running it once, from four directions
+  - level: '2'
+    id: when-step-three-fails
+    text: When step three fails
+  - level: '2'
+    id: undo-where-it-exists
+    text: Undo, where it exists
+  - level: '2'
+    id: stopping-it-halfway
+    text: Stopping it halfway
+  - level: '2'
+    id: what-the-person-gets
+    text: What the person gets
+related:
+  - agent-memory-across-channels
+  - layered-knowledge-for-ai-agents
+  - clear-proxy-for-ai-agents

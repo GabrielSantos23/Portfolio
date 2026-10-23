@@ -1,0 +1,38 @@
+title: Generative Color Fields
+excerpt: 'Turning a seed into something that reads like a film reduced to color: seeded noise, OKLCH, a texture model, and a demo you can drive.'
+publishedAt: 2026-07-05T23:00:00.000Z
+updatedAt: '2026-10-15'
+readTime: 6
+type: art
+tags:
+  - Generative Art
+  - SVG
+  - OKLCH
+  - Color
+  - TypeScript
+headings:
+  - level: '2'
+    id: the-actual-problem
+    text: The actual problem
+  - level: '2'
+    id: how-a-strip-is-built
+    text: How a strip is built
+  - level: '2'
+    id: the-texture-that-sells-it
+    text: The texture that sells it
+  - level: '2'
+    id: moods-measured-against-real-films
+    text: Moods, measured against real films
+  - level: '2'
+    id: the-other-mode-sampled-palettes
+    text: 'The other mode: sampled palettes'
+  - level: '2'
+    id: try-it
+    text: Try it
+  - level: '2'
+    id: where-this-goes
+    text: Where this goes
+related:
+  - generative-vasarely-in-code
+  - building-a-temporary-email-service
+  - the-21st-visitor-broke-live-mail

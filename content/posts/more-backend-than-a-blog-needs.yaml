@@ -1,0 +1,45 @@
+title: More Backend Than a Blog Needs
+excerpt: 'How pablofr.com is built: three services, Postgres, Meilisearch and Redis, one work queue and a lot of SSE. A personal site over-engineered on purpose.'
+publishedAt: 2026-07-05T22:50:00.000Z
+updatedAt: '2026-10-22'
+readTime: 9
+type: code
+tags:
+  - Architecture
+  - Microservices
+  - Hono
+  - Next.js
+  - Redis
+  - Meilisearch
+headings:
+  - level: '2'
+    id: the-shape
+    text: The shape
+  - level: '2'
+    id: the-web-is-mostly-a-reader
+    text: The web is mostly a reader
+  - level: '2'
+    id: the-api-is-where-the-work-is
+    text: The API is where the work is
+  - level: '2'
+    id: search-thats-half-switched-off
+    text: Search that's half switched off
+  - level: '2'
+    id: one-real-queue-and-the-worker-on-the-end-of-it
+    text: One real queue, and the worker on the end of it
+  - level: '2'
+    id: redis-is-not-the-cache
+    text: Redis is not the cache
+  - level: '2'
+    id: how-this-very-page-got-here
+    text: How this very page got here
+  - level: '2'
+    id: where-it-runs-briefly
+    text: Where it runs, briefly
+  - level: '2'
+    id: the-honest-limits
+    text: The honest limits
+related:
+  - building-a-temporary-email-service
+  - the-21st-visitor-broke-live-mail
+  - privacy-filters-for-ai-agents

@@ -1,0 +1,41 @@
+title: Giving an Inbox to Each Agent
+excerpt: Resets, invoices and support replies still arrive by email, and my agents live on HTTP. Mailingest is my Rust mail platform where an inbox is one API call.
+publishedAt: 2026-07-23T23:00:00.000Z
+updatedAt: '2026-10-22'
+readTime: 10
+type: code
+tags:
+  - Rust
+  - Email
+  - SMTP
+  - Webhooks
+  - Agents
+headings:
+  - level: '2'
+    id: an-inbox-is-a-row
+    text: An inbox is a row
+  - level: '2'
+    id: the-path-a-message-takes
+    text: The path a message takes
+  - level: '2'
+    id: answer-fast-verify-off-the-line
+    text: Answer fast, verify off the line
+  - level: '2'
+    id: which-address-wins
+    text: Which address wins
+  - level: '2'
+    id: the-webhook-is-the-inbox
+    text: The webhook is the inbox
+  - level: '2'
+    id: replying-and-a-human-over-the-shoulder
+    text: Replying, and a human over the shoulder
+  - level: '2'
+    id: where-it-isnt-worth-it
+    text: Where it isn't worth it
+  - level: '2'
+    id: what-an-address-buys
+    text: What an address buys
+related:
+  - building-a-temporary-email-service
+  - the-21st-visitor-broke-live-mail
+  - deterministic-rules-for-ai-agents

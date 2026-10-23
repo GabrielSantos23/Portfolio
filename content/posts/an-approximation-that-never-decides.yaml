@@ -1,0 +1,47 @@
+title: Choosing a Fast Vector Distance
+excerpt: A distance formula that only shortlists can be as wrong as its speed allows. Choosing between three hinged on a number that runs opposite to throughput.
+publishedAt: 2026-08-24T23:00:00.000Z
+updatedAt: '2026-10-22'
+readTime: 17
+type: code
+tags:
+  - Vector search
+  - Quantization
+  - Numerical precision
+  - Rust
+  - Benchmarking
+headings:
+  - level: '2'
+    id: where-the-arithmetic-actually-goes
+    text: Where the arithmetic actually goes
+  - level: '2'
+    id: the-filter-not-the-answer
+    text: The filter, not the answer
+  - level: '2'
+    id: the-candidate-i-was-arguing-for-and-its-failure-mode
+    text: The candidate I was arguing for, and its failure mode
+  - level: '2'
+    id: two-candidates-were-already-in-the-repo
+    text: Two candidates were already in the repo
+  - level: '2'
+    id: the-fastest-one-is-the-wrong-one
+    text: The fastest one is the wrong one
+  - level: '2'
+    id: what-the-field-does-which-is-not-gemm
+    text: What the field does, which is not GEMM
+  - level: '2'
+    id: the-comparison-and-the-decision
+    text: The comparison, and the decision
+  - level: '2'
+    id: the-counter-that-makes-it-safe
+    text: The counter that makes it safe
+  - level: '2'
+    id: honest-limits
+    text: Honest limits
+  - level: '2'
+    id: the-part-worth-keeping
+    text: The part worth keeping
+related:
+  - building-a-temporary-email-service
+  - the-21st-visitor-broke-live-mail
+  - deterministic-rules-for-ai-agents

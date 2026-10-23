@@ -1,0 +1,32 @@
+title: How React Server Components Work
+excerpt: How React Server Components split an app across the server/client boundary, why they never hydrate, and how to nest server content in a client component.
+publishedAt: 2026-02-10T23:00:00.000Z
+updatedAt: '2026-10-15'
+readTime: 2
+type: article
+tags:
+  - React
+  - Server Components
+  - Next.js
+  - Performance
+  - Architecture
+headings:
+  - level: '2'
+    id: not-the-same-as-ssr
+    text: Not the same as SSR
+  - level: '2'
+    id: server-components-and-client-islands
+    text: Server components and client islands
+  - level: '2'
+    id: the-composition-rule
+    text: The composition rule
+  - level: '2'
+    id: caching-the-output
+    text: Caching the output
+  - level: '2'
+    id: what-it-buys-you
+    text: What it buys you
+related:
+  - anti-bot-architecture-2026
+  - confirming-agent-actions
+  - building-apis-with-hono

@@ -1,0 +1,39 @@
+title: An AI Reply That Survives a Restart
+excerpt: If the tab reloads mid-answer, an AI reply should carry on, doing nothing twice. Sumalos does it with a Postgres row, a Redis lease and a fencing token.
+publishedAt: 2026-10-21T22:20:00.000Z
+updatedAt: '2026-10-22'
+readTime: 12
+type: ai
+tags:
+  - AI
+  - Agents
+  - Streaming
+  - Postgres
+  - Redis
+  - SSE
+headings:
+  - level: '2'
+    id: the-reply-is-not-the-request
+    text: The reply is not the request
+  - level: '2'
+    id: every-connection-starts-from-the-beginning
+    text: Every connection starts from the beginning
+  - level: '2'
+    id: when-the-producer-dies
+    text: When the producer dies
+  - level: '2'
+    id: resume-dont-repeat
+    text: Resume, don't repeat
+  - level: '2'
+    id: whatsapp-has-no-stream
+    text: WhatsApp has no stream
+  - level: '2'
+    id: what-it-costs
+    text: What it costs
+  - level: '2'
+    id: the-connection-was-never-the-point
+    text: The connection was never the point
+related:
+  - clear-proxy-for-ai-agents
+  - red-teaming-ai-agents
+  - ai-agent-guardrails

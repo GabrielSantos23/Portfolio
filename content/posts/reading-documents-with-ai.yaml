@@ -1,0 +1,44 @@
+title: The AI Is One Vote on the Receipt
+excerpt: A vision model misreads a crooked receipt and sounds sure of it. Sumalos reads documents several times, checks digits, and lets the model be one vote.
+publishedAt: 2026-10-21T22:00:00.000Z
+updatedAt: '2026-10-22'
+readTime: 13
+type: ai
+tags:
+  - AI
+  - OCR
+  - Document Extraction
+  - Consensus
+  - Postgres
+headings:
+  - level: '2'
+    id: seven-readers-for-one-document
+    text: Seven readers for one document
+  - level: '2'
+    id: how-one-field-gets-decided
+    text: How one field gets decided
+  - level: '2'
+    id: the-arbiter-sees-the-evidence-not-a-vote-count
+    text: The arbiter sees the evidence, not a vote count
+  - level: '2'
+    id: not-calling-the-model-at-all
+    text: Not calling the model at all
+  - level: '2'
+    id: what-the-arithmetic-is-allowed-to-say
+    text: What the arithmetic is allowed to say
+  - level: '2'
+    id: the-same-bytes-are-never-read-twice
+    text: The same bytes are never read twice
+  - level: '2'
+    id: id-cards-compared-never-stored
+    text: 'ID cards: compared, never stored'
+  - level: '2'
+    id: what-the-layers-bought
+    text: What the layers bought
+  - level: '2'
+    id: votes-not-trust
+    text: Votes, not trust
+related:
+  - privacy-filters-for-ai-agents
+  - layered-knowledge-for-ai-agents
+  - pixel-art-ai-assistant

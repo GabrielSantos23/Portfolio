@@ -1,0 +1,44 @@
+title: Building a Better WhatsApp SDK
+excerpt: WhatsApp's native protocol skips the headless browser but hands you a raw socket and a firehose of events. whatsweb is the thin layer that makes it a bot.
+publishedAt: 2026-07-22T23:00:00.000Z
+updatedAt: '2026-10-14'
+readTime: 11
+type: code
+tags:
+  - WhatsApp
+  - Baileys
+  - TypeScript
+  - Bots
+  - SDK
+headings:
+  - level: '2'
+    id: skipping-the-browser-is-not-free
+    text: Skipping the browser is not free
+  - level: '2'
+    id: a-protocol-is-not-a-bot
+    text: A protocol is not a bot
+  - level: '2'
+    id: the-router-is-one-good-idea-borrowed
+    text: The router is one good idea, borrowed
+  - level: '2'
+    id: turning-a-firehose-into-a-for-await-loop
+    text: Turning a firehose into a for-await loop
+  - level: '2'
+    id: media-from-anywhere-detected-not-declared
+    text: Media from anywhere, detected not declared
+  - level: '2'
+    id: conversations-without-a-database
+    text: Conversations without a database
+  - level: '2'
+    id: staying-connected-and-not-getting-banned
+    text: Staying connected, and not getting banned
+  - level: '2'
+    id: where-its-the-wrong-choice
+    text: Where it's the wrong choice
+  - level: '2'
+    id: the-browser-was-never-the-point
+    text: The browser was never the point
+related:
+  - pixel-art-ai-assistant
+  - building-a-temporary-email-service
+  - datamuro-data-seal

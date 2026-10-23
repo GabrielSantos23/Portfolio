@@ -1,0 +1,59 @@
+title: A 3D Book in Pure CSS
+excerpt: 'Each Secondbook travel guide is a hardcover you can turn in your hand. No WebGL: twenty-five divs, a few CSS transforms and a light model run per pose.'
+publishedAt: 2026-10-10T23:00:00.000Z
+updatedAt: '2026-10-22'
+readTime: 18
+type: code
+tags:
+  - CSS
+  - 3D
+  - OpenCV
+  - React
+  - Design
+headings:
+  - level: '2'
+    id: why-not-a-3d-engine
+    text: Why not a 3D engine
+  - level: '2'
+    id: twenty-five-faces
+    text: Twenty-five faces
+  - level: '2'
+    id: a-round-spine-from-flat-strips
+    text: A round spine from flat strips
+  - level: '2'
+    id: light-is-computed-not-rendered
+    text: Light is computed, not rendered
+  - level: '2'
+    id: a-camera-you-place-by-projecting-corners
+    text: A camera you place by projecting corners
+  - level: '2'
+    id: one-spring-two-engines
+    text: One spring, two engines
+  - level: '2'
+    id: the-engraved-cover
+    text: The engraved cover
+  - level: '3'
+    id: framing-before-anything
+    text: Framing before anything
+  - level: '3'
+    id: cutting-the-landmark-out
+    text: Cutting the landmark out
+  - level: '3'
+    id: lines-that-follow-the-stone
+    text: Lines that follow the stone
+  - level: '3'
+    id: masks-not-pictures
+    text: Masks, not pictures
+  - level: '2'
+    id: why-it-gets-its-own-pipeline
+    text: Why it gets its own pipeline
+  - level: '2'
+    id: where-it-isnt-worth-it-1
+    text: Where it isn't worth it
+  - level: '2'
+    id: the-trade-1
+    text: The trade
+related:
+  - non-custodial-payment-gateway
+  - a-url-that-speaks-markdown
+  - privacy-filters-for-ai-agents

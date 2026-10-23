@@ -1,0 +1,41 @@
+title: Every File in S3 Gets Its Own Key
+excerpt: Sumalos encrypts every file in its bucket with its own key, wrapped by the organization's, wrapped by a master key. A leaked bucket is noise.
+publishedAt: 2026-10-21T22:50:00.000Z
+updatedAt: '2026-10-22'
+readTime: 11
+type: code
+tags:
+  - Encryption
+  - S3
+  - Object Storage
+  - TypeScript
+  - Security
+headings:
+  - level: '2'
+    id: three-keys-deep
+    text: Three keys deep
+  - level: '2'
+    id: a-file-larger-than-memory
+    text: A file larger than memory
+  - level: '2'
+    id: reading-a-byte-range
+    text: Reading a byte range
+  - level: '2'
+    id: rotating-the-master
+    text: Rotating the master
+  - level: '2'
+    id: deleting-by-forgetting
+    text: Deleting by forgetting
+  - level: '2'
+    id: handing-a-file-to-a-browser
+    text: Handing a file to a browser
+  - level: '2'
+    id: the-uploads-nobody-finishes
+    text: The uploads nobody finishes
+  - level: '2'
+    id: what-the-bucket-still-says
+    text: What the bucket still says
+related:
+  - ai-cost-per-feature
+  - pixel-art-ai-assistant
+  - two-builds-one-address

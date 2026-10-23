@@ -1,0 +1,37 @@
+title: pg_cron as a Clock, Not a Worker
+excerpt: >-
+  Per-customer scheduled jobs, several workers, no duplicates. In Sumalos
+  pg_cron only inserts a row and sends a NOTIFY; the work stays in the app.
+publishedAt: 2026-10-21T23:00:00.000Z
+updatedAt: 2026-10-22
+readTime: 9
+type: code
+tags:
+  - Postgres
+  - pg_cron
+  - Scheduling
+  - Workers
+  - TypeScript
+headings:
+  - level: '2'
+    id: the-scheduler-i-already-had
+    text: The scheduler I already had
+  - level: '2'
+    id: what-pg_cron-does-at-a-firing
+    text: What pg_cron does at a firing
+  - level: '2'
+    id: several-workers-one-run
+    text: Several workers, one run
+  - level: '2'
+    id: monday-at-9-is-not-a-cron-expression
+    text: '"Monday at 9" is not a cron expression'
+  - level: '2'
+    id: fired-twice-run-once
+    text: Fired twice, run once
+  - level: '2'
+    id: what-pg_cron-is-trusted-with
+    text: What pg_cron is trusted with
+related:
+  - building-a-temporary-email-service
+  - the-21st-visitor-broke-live-mail
+  - privacy-filters-for-ai-agents

@@ -1,0 +1,32 @@
+title: Avatars from a Username
+excerpt: Deterministic avatars from a username, first as ordered-dithered identicons, then as halftone dot fields where the dot size does the drawing.
+publishedAt: 2026-07-04T22:40:00.000Z
+updatedAt: '2026-10-14'
+readTime: 4
+type: art
+tags:
+  - Generative Art
+  - SVG
+  - Dithering
+  - Halftone
+  - TypeScript
+headings:
+  - level: '2'
+    id: the-trick-is-ordered-dithering-not-noise
+    text: The trick is ordered dithering, not noise
+  - level: '2'
+    id: colors-come-from-the-name-too
+    text: Colors come from the name too
+  - level: '2'
+    id: same-idea-softer-output-halftone
+    text: 'Same idea, softer output: halftone'
+  - level: '2'
+    id: try-it
+    text: Try it
+  - level: '2'
+    id: where-this-goes
+    text: Where this goes
+related:
+  - building-a-temporary-email-service
+  - the-21st-visitor-broke-live-mail
+  - privacy-filters-for-ai-agents

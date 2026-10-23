@@ -1,0 +1,45 @@
+title: Every AI Call Gets a Receipt
+excerpt: One AI bill a month, twenty kinds of model call. How Sumalos prices every attempt as it happens and caps spending per person and per company.
+publishedAt: 2026-10-21T22:10:00.000Z
+updatedAt: '2026-10-22'
+readTime: 13
+type: ai
+tags:
+  - AI
+  - Agents
+  - Cost
+  - Observability
+  - Redis
+  - Postgres
+headings:
+  - level: '2'
+    id: one-door-for-every-model
+    text: One door for every model
+  - level: '2'
+    id: a-row-per-attempt-not-per-call
+    text: A row per attempt, not per call
+  - level: '2'
+    id: whose-number-is-the-price
+    text: Whose number is the price
+  - level: '3'
+    id: the-stream-nobody-finished-reading
+    text: The stream nobody finished reading
+  - level: '2'
+    id: a-receipt-per-message
+    text: A receipt per message
+  - level: '2'
+    id: caps-that-read-counters-not-the-ledger
+    text: Caps that read counters, not the ledger
+  - level: '3'
+    id: who-gets-refused-and-how
+    text: Who gets refused, and how
+  - level: '2'
+    id: what-the-receipts-changed
+    text: What the receipts changed
+  - level: '2'
+    id: the-price-of-a-receipt
+    text: The price of a receipt
+related:
+  - pixel-art-ai-assistant
+  - privacy-filters-for-ai-agents
+  - per-file-encryption-keys

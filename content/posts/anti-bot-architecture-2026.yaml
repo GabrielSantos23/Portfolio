@@ -1,0 +1,47 @@
+title: How Bot Detection Works
+excerpt: How modern anti-bot systems work in 2026, from TLS and HTTP fingerprints to obfuscated client probes, server-side ML scoring and tokens that last seconds.
+publishedAt: 2026-07-06T22:40:00.000Z
+updatedAt: '2026-10-15'
+readTime: 16
+type: scraping
+tags:
+  - Anti-Bot
+  - Bot Detection
+  - Fingerprinting
+  - Web Scraping
+  - Security
+headings:
+  - level: '2'
+    id: no-single-signal
+    text: No single signal
+  - level: '2'
+    id: before-your-javascript-runs
+    text: Before your JavaScript runs
+  - level: '2'
+    id: the-agent-they-ship-to-your-browser
+    text: The agent they ship to your browser
+  - level: '2'
+    id: three-kinds-of-signal-one-contradiction
+    text: Three kinds of signal, one contradiction
+  - level: '2'
+    id: the-verdict-is-computed-server-side
+    text: The verdict is computed server-side
+  - level: '2'
+    id: tokens-that-expire-in-seconds
+    text: Tokens that expire in seconds
+  - level: '2'
+    id: make-it-expensive-or-make-it-invisible
+    text: Make it expensive, or make it invisible
+  - level: '2'
+    id: what-you-can-actually-build
+    text: What you can actually build
+  - level: '2'
+    id: where-it-breaks
+    text: Where it breaks
+  - level: '2'
+    id: the-part-you-can-actually-own
+    text: The part you can actually own
+related:
+  - confirming-agent-actions
+  - understanding-react-server-components
+  - building-apis-with-hono

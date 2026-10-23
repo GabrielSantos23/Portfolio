@@ -1,0 +1,41 @@
+title: Tax Rules the Agent Can Only Explain
+excerpt: In Sumalos the language model never computes a tax. A deterministic rules engine does, with hashed bundles, exact decimals and two clocks.
+publishedAt: 2026-10-21T20:40:00.000Z
+updatedAt: '2026-10-22'
+readTime: 14
+type: ai
+tags:
+  - AI
+  - Agents
+  - Rules Engine
+  - Taxes
+  - TypeScript
+headings:
+  - level: '2'
+    id: where-the-model-stops
+    text: Where the model stops
+  - level: '2'
+    id: a-rule-is-a-row-with-tests
+    text: A rule is a row with tests
+  - level: '2'
+    id: two-clocks
+    text: Two clocks
+  - level: '2'
+    id: the-engine-never-guesses
+    text: The engine never guesses
+  - level: '2'
+    id: a-hash-for-every-answer
+    text: A hash for every answer
+  - level: '2'
+    id: proving-the-rewrite-changed-nothing
+    text: Proving the rewrite changed nothing
+  - level: '2'
+    id: how-a-change-gets-in
+    text: How a change gets in
+  - level: '2'
+    id: what-the-model-gives-up
+    text: What the model gives up
+related:
+  - building-a-temporary-email-service
+  - the-21st-visitor-broke-live-mail
+  - clear-proxy-for-ai-agents

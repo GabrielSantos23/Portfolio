@@ -1,0 +1,41 @@
+title: Turning a VPS into a Platform
+excerpt: Why I encoded a whole VPS as one Go CLI, pfrctl, instead of renting a PaaS or running a heavy self-hosted panel, and where that trade-off pays off.
+publishedAt: 2026-07-04T22:50:00.000Z
+updatedAt: '2026-10-22'
+readTime: 7
+type: code
+tags:
+  - Infrastructure
+  - Self-hosting
+  - DevOps
+  - Postgres
+  - Go
+headings:
+  - level: '2'
+    id: the-problem-neither-side-solves
+    text: The problem neither side solves
+  - level: '2'
+    id: the-design-decision
+    text: The design decision
+  - level: '2'
+    id: what-pfrctl-actually-is
+    text: What pfrctl actually is
+  - level: '2'
+    id: shipping-an-app
+    text: Shipping an app
+  - level: '2'
+    id: the-shared-data-stack-precisely
+    text: The shared data-stack, precisely
+  - level: '2'
+    id: operating-it-for-real
+    text: Operating it for real
+  - level: '2'
+    id: the-honest-comparison
+    text: The honest comparison
+  - level: '2'
+    id: when-its-worth-it-and-when-it-isnt
+    text: When it's worth it, and when it isn't
+related:
+  - generative-colorfield-colors-of-motion
+  - building-a-temporary-email-service
+  - the-21st-visitor-broke-live-mail

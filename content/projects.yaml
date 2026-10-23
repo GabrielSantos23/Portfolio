@@ -1,0 +1,31 @@
+items:
+  - name: whatsweb
+    description: A browserless WhatsApp Web SDK for Node.js, built on the native Multi-Device protocol.
+    icon: npm
+    href: https://www.npmjs.com/package/@whatsweb/core
+    secondaryKind: Github
+    secondaryHref: https://github.com/pablofdezr/whatsweb
+  - name: microvm
+    description: Run untrusted code — Go, Python, TypeScript, Rust — in Firecracker microVMs on your own hardware. Written entirely in Go.
+    icon: npm
+    href: https://www.npmjs.com/package/@pablofdezr/microvm
+    secondaryKind: Github
+    secondaryHref: https://github.com/pablofdezr/microvm
+  - name: WOC
+    description: 'WOC (Wake On Call) for Docker apps behind Traefik: idle containers are stopped, and the first request starts them again in about a quarter of a second.'
+    icon: github
+    href: https://github.com/pablofdezr/woc
+    secondaryKind: Website
+    secondaryHref: /blog/off-until-someone-asks
+  - name: skew-router
+    description: 'Skew protection for self-hosted Next.js on Kubernetes: every open browser tab keeps talking to the build that served it, across deploys and rollbacks.'
+    icon: github
+    href: https://github.com/pablofdezr/skew-router
+    secondaryKind: Website
+    secondaryHref: /blog/two-builds-one-address
+  - name: pixel-mascot
+    description: 'Procedural pixel-art mascots for the web, in the style of the old Office assistants: no sprites, every frame computed from distance functions. Eleven characters, 23 gestures and 28 accessories.'
+    icon: github
+    href: https://github.com/pablofdezr/pixel-mascot
+    secondaryKind: Website
+    secondaryHref: /blog/pixel-art-ai-assistant

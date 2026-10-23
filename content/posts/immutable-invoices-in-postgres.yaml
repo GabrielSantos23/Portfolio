@@ -1,0 +1,38 @@
+title: Invoices Postgres Refuses to Change
+excerpt: 'Spanish law says an issued invoice can''t change and numbers can''t skip. In Sumalos Postgres enforces it: freezing triggers, a locked counter, a hash chain.'
+publishedAt: 2026-10-21T22:40:00.000Z
+updatedAt: '2026-10-22'
+readTime: 11
+type: code
+tags:
+  - Postgres
+  - Invoicing
+  - Triggers
+  - VERI*FACTU
+  - Spain
+headings:
+  - level: '2'
+    id: a-draft-is-not-an-invoice-yet
+    text: A draft is not an invoice yet
+  - level: '2'
+    id: the-trigger-that-freezes-an-issued-invoice
+    text: The trigger that freezes an issued invoice
+  - level: '2'
+    id: numbers-without-gaps
+    text: Numbers without gaps
+  - level: '2'
+    id: fixing-a-mistake-without-editing-anything
+    text: Fixing a mistake without editing anything
+  - level: '2'
+    id: a-chain-the-tax-office-can-check
+    text: A chain the tax office can check
+  - level: '2'
+    id: where-the-guard-is-thin
+    text: Where the guard is thin
+  - level: '2'
+    id: what-the-database-is-for-here
+    text: What the database is for here
+related:
+  - clear-proxy-for-ai-agents
+  - confirming-agent-actions
+  - giving-an-inbox-to-each-agent

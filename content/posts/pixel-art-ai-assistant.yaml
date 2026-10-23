@@ -1,0 +1,41 @@
+title: Building a Pixel-Art AI Assistant
+excerpt: 'Sumalos'' assistant is a 48-pixel rubber stamp with no sprite sheet: every frame is computed from distance functions, its face shows what the model does.'
+publishedAt: 2026-10-16T23:00:00.000Z
+updatedAt: '2026-10-22'
+readTime: 10
+type: code
+tags:
+  - Pixel Art
+  - Canvas
+  - TypeScript
+  - AI
+  - Design
+headings:
+  - level: '2'
+    id: a-face-that-shows-state
+    text: A face that shows state
+  - level: '2'
+    id: why-there-are-no-sprites
+    text: Why there are no sprites
+  - level: '2'
+    id: one-face-for-every-character
+    text: One face for every character
+  - level: '2'
+    id: hats-that-fit-any-head
+    text: Hats that fit any head
+  - level: '2'
+    id: what-a-frame-costs
+    text: What a frame costs
+  - level: '2'
+    id: where-the-modern-brain-comes-in
+    text: Where the modern brain comes in
+  - level: '2'
+    id: use-it-yourself
+    text: Use it yourself
+  - level: '2'
+    id: a-cheap-face-on-purpose
+    text: A cheap face on purpose
+related:
+  - building-a-temporary-email-service
+  - building-a-better-whatsapp-sdk
+  - datamuro-data-seal

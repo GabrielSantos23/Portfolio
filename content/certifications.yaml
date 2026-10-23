@@ -1,0 +1,25 @@
+title: Certificações
+collegesTitle: Formação acadêmica
+colleges:
+  - name: Nome do curso de graduação
+    institution: Nome da faculdade
+    period: 2020 – 2024
+    url: null
+  - name: Nome da pós-graduação
+    institution: Nome da faculdade
+    period: 2024 – 2025
+    url: null
+coursesTitle: Cursos
+courses:
+  - name: Nome do curso
+    issuer: Nome da plataforma
+    date: '2025'
+    url: null
+  - name: Nome do curso
+    issuer: Nome da plataforma
+    date: '2024'
+    url: null
+  - name: Nome do curso
+    issuer: Nome da plataforma
+    date: '2023'
+    url: null

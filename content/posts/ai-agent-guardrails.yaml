@@ -1,0 +1,41 @@
+title: Assume Your AI Agent Will Be Fooled
+excerpt: 'An AI agent reading messages from strangers will obey one someday. Sumalos'' guardrails assume it: a classifier, limits in code, a canary in the prompt.'
+publishedAt: 2026-10-21T21:40:00.000Z
+updatedAt: '2026-10-22'
+readTime: 13
+type: ai
+tags:
+  - AI
+  - Agents
+  - Prompt Injection
+  - Guardrails
+  - Security
+headings:
+  - level: '2'
+    id: what-the-guardrails-are-for
+    text: What the guardrails are for
+  - level: '2'
+    id: a-classifier-that-runs-beside-the-reply
+    text: A classifier that runs beside the reply
+  - level: '2'
+    id: text-the-model-reads-but-nobody-typed
+    text: Text the model reads but nobody typed
+  - level: '2'
+    id: limits-counted-where-every-call-passes
+    text: Limits counted where every call passes
+  - level: '2'
+    id: holding-the-brakes
+    text: Holding the brakes
+  - level: '2'
+    id: what-leaves-in-the-reply
+    text: What leaves in the reply
+  - level: '2'
+    id: measured-against-101-attacks
+    text: Measured against 101 attacks
+  - level: '2'
+    id: the-rule-for-the-next-guard
+    text: The rule for the next guard
+related:
+  - red-teaming-ai-agents
+  - building-a-temporary-email-service
+  - the-21st-visitor-broke-live-mail

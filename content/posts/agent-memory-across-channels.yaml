@@ -1,0 +1,47 @@
+title: An Agent That Remembers Across Channels
+excerpt: Payment terms said on the web on Monday should be known on WhatsApp on Thursday, by the right people only. How Sumalos designs its AI agent's memory.
+publishedAt: 2026-10-21T21:30:00.000Z
+updatedAt: '2026-10-22'
+readTime: 20
+type: ai
+tags:
+  - AI
+  - Agents
+  - Memory
+  - Postgres
+  - WhatsApp
+headings:
+  - level: '2'
+    id: monday-1014-one-row-per-message-whatever-the-channel
+    text: 'Monday, 10:14: one row per message, whatever the channel'
+  - level: '2'
+    id: monday-a-few-seconds-later-a-gate-not-a-model
+    text: 'Monday, a few seconds later: a gate, not a model'
+  - level: '2'
+    id: who-a-fact-belongs-to
+    text: Who a fact belongs to
+  - level: '3'
+    id: when-the-person-changes-their-mind
+    text: When the person changes their mind
+  - level: '2'
+    id: thursday-1840-the-same-person-another-door
+    text: 'Thursday, 18:40: the same person, another door'
+  - level: '2'
+    id: what-the-model-actually-reads
+    text: What the model actually reads
+  - level: '2'
+    id: the-next-version-less-up-front-more-on-time
+    text: 'The next version: less up front, more on time'
+  - level: '2'
+    id: forgetting-the-middle-keeping-the-numbers
+    text: Forgetting the middle, keeping the numbers
+  - level: '2'
+    id: memory-is-also-a-way-in
+    text: Memory is also a way in
+  - level: '2'
+    id: what-it-forgets-on-purpose
+    text: What it forgets on purpose
+related:
+  - confirming-agent-actions
+  - clear-proxy-for-ai-agents
+  - layered-knowledge-for-ai-agents

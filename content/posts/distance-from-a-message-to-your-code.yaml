@@ -1,0 +1,38 @@
+title: One Bot, Three Chat Apps
+excerpt: 'Same bot: a few lines on Telegram, a gateway and intents on Discord, a headless browser posing as a phone on WhatsApp. The hard part was never the bot.'
+publishedAt: 2026-07-21T23:00:00.000Z
+updatedAt: '2026-10-22'
+readTime: 11
+type: code
+tags:
+  - Bots
+  - Discord
+  - Telegram
+  - WhatsApp
+  - TypeScript
+headings:
+  - level: '2'
+    id: two-problems-wearing-one-name
+    text: Two problems wearing one name
+  - level: '2'
+    id: telegram-hands-you-an-api
+    text: Telegram hands you an API
+  - level: '2'
+    id: discord-hands-you-a-gateway-and-a-bag-of-intents
+    text: Discord hands you a gateway and a bag of intents
+  - level: '2'
+    id: whatsapp-makes-you-pretend-to-be-a-browser
+    text: WhatsApp makes you pretend to be a browser
+  - level: '2'
+    id: one-codebase-every-platform
+    text: One codebase, every platform
+  - level: '2'
+    id: where-each-one-is-the-wrong-choice
+    text: Where each one is the wrong choice
+  - level: '2'
+    id: the-hard-part-was-never-the-bot
+    text: The hard part was never the bot
+related:
+  - reading-documents-with-ai
+  - layered-knowledge-for-ai-agents
+  - tool-permissions-for-ai-agents

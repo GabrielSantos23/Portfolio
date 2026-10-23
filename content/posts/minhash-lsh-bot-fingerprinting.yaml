@@ -1,0 +1,47 @@
+title: Catching Bots with MinHash
+excerpt: Exact-match blocklists miss a bot farm that changes one field per request. MinHash and LSH ask "have I seen something shaped like this" in sublinear time.
+publishedAt: 2026-07-10T23:00:00.000Z
+updatedAt: '2026-10-15'
+readTime: 16
+type: scraping
+tags:
+  - MinHash
+  - LSH
+  - Fingerprinting
+  - Bot Detection
+  - Near-Duplicate Detection
+headings:
+  - level: '2'
+    id: the-blocklist-that-sees-a-thousand-strangers
+    text: The blocklist that sees a thousand strangers
+  - level: '2'
+    id: why-the-obvious-fix-does-not-scale
+    text: Why the obvious fix does not scale
+  - level: '2'
+    id: turn-a-fingerprint-into-a-set
+    text: Turn a fingerprint into a set
+  - level: '2'
+    id: the-trick-that-makes-minhash-work
+    text: The trick that makes MinHash work
+  - level: '2'
+    id: from-signatures-to-buckets
+    text: From signatures to buckets
+  - level: '2'
+    id: the-farm-lights-up-one-bucket
+    text: The farm lights up one bucket
+  - level: '2'
+    id: minhash-or-simhash
+    text: MinHash or SimHash
+  - level: '2'
+    id: the-hard-part-is-time
+    text: The hard part is time
+  - level: '2'
+    id: where-it-clusters-the-wrong-people
+    text: Where it clusters the wrong people
+  - level: '2'
+    id: what-it-actually-buys-you
+    text: What it actually buys you
+related:
+  - building-a-temporary-email-service
+  - the-21st-visitor-broke-live-mail
+  - privacy-filters-for-ai-agents

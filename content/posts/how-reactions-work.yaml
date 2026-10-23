@@ -1,0 +1,44 @@
+title: Anonymous Emoji Reactions
+excerpt: 'A no-login emoji bar that counts strangers'' clicks and still trusts the total: two disposable identities, a row only you can write, and a live SSE stream.'
+publishedAt: 2026-07-06T23:00:00.000Z
+updatedAt: '2026-10-15'
+readTime: 12
+type: code
+tags:
+  - Reactions
+  - Postgres
+  - Realtime
+  - SSE
+  - Anonymous Identity
+headings:
+  - level: '2'
+    id: three-wishes-that-fight-each-other
+    text: Three wishes that fight each other
+  - level: '2'
+    id: two-identities-not-one
+    text: Two identities, not one
+  - level: '2'
+    id: where-the-id-lives-so-it-survives-you-clearing-it
+    text: Where the id lives, so it survives you clearing it
+  - level: '2'
+    id: the-write-is-a-toggle-never-a-counter
+    text: The write is a toggle, never a counter
+  - level: '2'
+    id: batching-the-clicks
+    text: Batching the clicks
+  - level: '2'
+    id: one-write-every-open-tab
+    text: One write, every open tab
+  - level: '2'
+    id: an-honest-number
+    text: An honest number
+  - level: '2'
+    id: where-it-breaks-1
+    text: Where it breaks
+  - level: '2'
+    id: what-it-actually-takes-to-trust-a-click
+    text: What it actually takes to trust a click
+related:
+  - building-a-temporary-email-service
+  - the-21st-visitor-broke-live-mail
+  - privacy-filters-for-ai-agents

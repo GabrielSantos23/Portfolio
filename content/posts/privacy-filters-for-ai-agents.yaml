@@ -1,0 +1,41 @@
+title: A Privacy Filter Below the Prompt
+excerpt: Telling an AI agent not to read an IBAN is only a request. In Sumalos the privacy filter sits in the one module every read passes through.
+publishedAt: 2026-10-21T20:50:00.000Z
+updatedAt: '2026-10-22'
+readTime: 12
+type: ai
+tags:
+  - AI
+  - Agents
+  - Privacy
+  - Postgres
+  - Security
+headings:
+  - level: '2'
+    id: one-door-for-every-read
+    text: One door for every read
+  - level: '2'
+    id: a-policy-the-organization-writes
+    text: A policy the organization writes
+  - level: '2'
+    id: rows-the-role-cant-see
+    text: Rows the role can't see
+  - level: '2'
+    id: fields-by-path
+    text: Fields, by path
+  - level: '2'
+    id: free-text-has-no-field-names
+    text: Free text has no field names
+  - level: '2'
+    id: questions-whose-answer-leaks
+    text: Questions whose answer leaks
+  - level: '2'
+    id: a-log-that-keeps-ids-not-values
+    text: A log that keeps ids, not values
+  - level: '2'
+    id: what-the-model-is-told-and-why
+    text: What the model is told, and why
+related:
+  - non-custodial-payment-gateway
+  - a-url-that-speaks-markdown
+  - a-book-in-twenty-five-faces

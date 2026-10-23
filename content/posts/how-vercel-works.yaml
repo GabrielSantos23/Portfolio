@@ -1,0 +1,47 @@
+title: Your Own Vercel on a VPS
+excerpt: How a modern PaaS turns a git push into an immutable deployment, from cold starts to Fluid compute, and how to rebuild the same machine on a VPS you own.
+publishedAt: 2026-07-06T22:50:00.000Z
+updatedAt: '2026-10-15'
+readTime: 16
+type: code
+tags:
+  - Vercel
+  - PaaS
+  - Serverless
+  - Infrastructure
+  - Kubernetes
+headings:
+  - level: '2'
+    id: two-planes
+    text: Two planes
+  - level: '2'
+    id: immutability-is-the-whole-trick
+    text: Immutability is the whole trick
+  - level: '2'
+    id: the-build-splits-your-app-in-two
+    text: The build splits your app in two
+  - level: '2'
+    id: static-is-easy-server-is-the-whole-problem
+    text: Static is easy, server is the whole problem
+  - level: '2'
+    id: why-serverless-got-cold
+    text: Why serverless got cold
+  - level: '2'
+    id: serverless-servers
+    text: Serverless servers
+  - level: '2'
+    id: a-url-and-a-certificate-for-free
+    text: A URL and a certificate, for free
+  - level: '2'
+    id: what-of-this-can-you-actually-build
+    text: What of this can you actually build?
+  - level: '2'
+    id: where-it-breaks-2
+    text: Where it breaks
+  - level: '2'
+    id: the-part-you-can-actually-own-1
+    text: The part you can actually own
+related:
+  - ai-agent-guardrails
+  - tool-permissions-for-ai-agents
+  - fluid-compute-on-your-own-vps

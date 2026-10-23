@@ -1,0 +1,41 @@
+title: Red-Teaming an AI Agent Without a Model
+excerpt: Red-teaming an AI agent against a real model is slow, costly and never repeats. For Sumalos I assume the model is compromised, script it, test the rest.
+publishedAt: 2026-10-21T21:50:00.000Z
+updatedAt: '2026-10-22'
+readTime: 10
+type: ai
+tags:
+  - AI
+  - Agents
+  - Security
+  - Testing
+  - Red Team
+headings:
+  - level: '2'
+    id: the-model-is-the-attacker
+    text: The model is the attacker
+  - level: '2'
+    id: an-attack-is-a-test-case
+    text: An attack is a test case
+  - level: '2'
+    id: assert-on-what-happened-not-on-what-was-said
+    text: Assert on what happened, not on what was said
+  - level: '2'
+    id: a-world-that-rolls-back
+    text: A world that rolls back
+  - level: '2'
+    id: tests-that-grow-with-the-catalogue
+    text: Tests that grow with the catalogue
+  - level: '2'
+    id: where-the-real-model-still-comes-in
+    text: Where the real model still comes in
+  - level: '2'
+    id: what-a-skip-looks-like
+    text: What a skip looks like
+  - level: '2'
+    id: what-it-asks-of-every-tool
+    text: What it asks of every tool
+related:
+  - building-a-temporary-email-service
+  - the-21st-visitor-broke-live-mail
+  - privacy-filters-for-ai-agents

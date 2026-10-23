@@ -1,0 +1,38 @@
+title: Building APIs with Hono
+excerpt: 'How I build type-safe APIs with Hono: the router, the Context object, Zod validation, centralized error handling, and end-to-end types shared with the frontend.'
+publishedAt: 2026-02-10T22:40:00.000Z
+updatedAt: '2026-07-11'
+readTime: 2
+type: code
+tags:
+  - Hono
+  - APIs
+  - TypeScript
+  - Web Development
+  - Bun
+headings:
+  - level: '2'
+    id: why-i-reach-for-it
+    text: Why I reach for it
+  - level: '2'
+    id: a-first-route
+    text: A first route
+  - level: '2'
+    id: the-context-object
+    text: The Context object
+  - level: '2'
+    id: middleware-and-validation
+    text: Middleware and validation
+  - level: '2'
+    id: end-to-end-types
+    text: End-to-end types
+  - level: '2'
+    id: error-handling
+    text: Error handling
+  - level: '2'
+    id: where-it-fits
+    text: Where it fits
+related:
+  - pixel-art-ai-assistant
+  - building-a-temporary-email-service
+  - building-a-better-whatsapp-sdk

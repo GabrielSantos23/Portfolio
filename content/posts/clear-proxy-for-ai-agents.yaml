@@ -1,0 +1,38 @@
+title: An AI Agent That Only Sees Pseudonyms
+excerpt: An AI agent that sends invoices never needs to hold the customer's data. A clear proxy gives the model handles and puts real values back on the server.
+publishedAt: 2026-10-21T21:00:00.000Z
+updatedAt: '2026-10-22'
+readTime: 12
+type: ai
+tags:
+  - AI
+  - Agents
+  - Privacy
+  - Security
+  - TypeScript
+headings:
+  - level: '2'
+    id: two-kinds-of-stand-in
+    text: Two kinds of stand-in
+  - level: '2'
+    id: handles-a-pointer-you-were-given
+    text: 'Handles: a pointer you were given'
+  - level: '2'
+    id: pseudonyms-a-name-that-hides-its-value
+    text: 'Pseudonyms: a name that hides its value'
+  - level: '2'
+    id: the-way-in-putting-the-real-value-back
+    text: 'The way in: putting the real value back'
+  - level: '2'
+    id: the-way-out-masking-what-comes-back
+    text: 'The way out: masking what comes back'
+  - level: '2'
+    id: the-stand-in-the-model-never-gets
+    text: The stand-in the model never gets
+  - level: '2'
+    id: what-the-model-is-told-1
+    text: What the model is told
+related:
+  - agent-memory-across-channels
+  - confirming-agent-actions
+  - red-teaming-ai-agents

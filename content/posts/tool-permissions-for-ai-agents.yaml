@@ -1,0 +1,39 @@
+title: The Agent Borrows Your Permissions
+excerpt: One AI agent, five people with different rights. Sumalos limits the agent's tools to what the person talking to it could do in the app.
+publishedAt: 2026-10-21T21:20:00.000Z
+updatedAt: '2026-10-22'
+readTime: 11
+type: ai
+tags:
+  - AI
+  - Agents
+  - Permissions
+  - Tool Calling
+  - Security
+  - Sumalos
+headings:
+  - level: '2'
+    id: who-is-asking-is-never-a-tool-argument
+    text: Who is asking is never a tool argument
+  - level: '2'
+    id: a-handful-of-tools-instead-of-fifty
+    text: A handful of tools instead of fifty
+  - level: '2'
+    id: what-the-model-is-told
+    text: What the model is told
+  - level: '2'
+    id: checked-when-its-proposed-and-again-when-it-runs
+    text: Checked when it's proposed, and again when it runs
+  - level: '2'
+    id: the-yes-the-model-cant-say
+    text: The yes the model can't say
+  - level: '2'
+    id: a-tool-that-cant-reach-the-database
+    text: A tool that can't reach the database
+  - level: '2'
+    id: five-people-one-sentence
+    text: Five people, one sentence
+related:
+  - deterministic-rules-for-ai-agents
+  - agent-memory-across-channels
+  - privacy-filters-for-ai-agents

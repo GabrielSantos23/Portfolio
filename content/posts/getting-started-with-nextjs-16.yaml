@@ -1,0 +1,38 @@
+title: What Changed in Next.js 16
+excerpt: 'What changed in Next.js 16: the "use cache" directive, Turbopack and the React Compiler by default, proxy.ts instead of middleware, and View Transitions.'
+publishedAt: 2026-02-10T22:50:00.000Z
+updatedAt: '2026-10-15'
+readTime: 2
+type: article
+tags:
+  - Next.js
+  - React
+  - TypeScript
+  - Web Development
+  - Performance
+headings:
+  - level: '2'
+    id: the-use-cache-directive
+    text: The "use cache" directive
+  - level: '2'
+    id: turbopack-is-the-default-bundler
+    text: Turbopack is the default bundler
+  - level: '2'
+    id: the-react-compiler-on-by-default
+    text: The React Compiler, on by default
+  - level: '2'
+    id: starting-a-project
+    text: Starting a project
+  - level: '2'
+    id: proxyts-in-place-of-middleware
+    text: proxy.ts in place of middleware
+  - level: '2'
+    id: view-transitions
+    text: View Transitions
+  - level: '2'
+    id: where-it-leaves-you
+    text: Where it leaves you
+related:
+  - layered-knowledge-for-ai-agents
+  - k3s-vs-k0s-vs-kubernetes
+  - datamuro-data-seal

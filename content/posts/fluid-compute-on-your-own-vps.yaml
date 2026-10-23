@@ -1,0 +1,35 @@
+title: Fluid Compute on Your Own VPS
+excerpt: Fluid compute stops billing the I/O wait serverless charges in full. It's a worker pool and a cgroups v2 counter, so I rebuilt what I could on my own box.
+publishedAt: 2026-07-13T23:00:00.000Z
+updatedAt: '2026-10-15'
+readTime: 7
+type: code
+tags:
+  - Serverless
+  - Go
+  - Self-hosting
+  - cgroups
+  - Firecracker
+headings:
+  - level: '2'
+    id: two-changes-not-a-new-kind-of-vm
+    text: Two changes, not a new kind of VM
+  - level: '2'
+    id: the-stack-underneath-and-why-you-cant-copy-it
+    text: The stack underneath, and why you can't copy it
+  - level: '2'
+    id: the-wall-my-box-hit
+    text: The wall my box hit
+  - level: '2'
+    id: rebuilding-the-valuable-80-in-go
+    text: Rebuilding the valuable 80% in Go
+  - level: '2'
+    id: what-you-dont-get
+    text: What you don't get
+  - level: '2'
+    id: the-trade-restated
+    text: The trade, restated
+related:
+  - how-vercel-works
+  - building-a-temporary-email-service
+  - the-21st-visitor-broke-live-mail

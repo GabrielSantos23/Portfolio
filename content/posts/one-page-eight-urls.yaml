@@ -1,0 +1,53 @@
+title: URLs in Eight Languages
+excerpt: Secondbook speaks eight languages, and so do its URLs. One registry drives every link, redirect, guard and robots.txt line, with a single folder per page.
+publishedAt: 2026-10-10T22:50:00.000Z
+updatedAt: '2026-10-15'
+readTime: 12
+type: code
+tags:
+  - Next.js
+  - i18n
+  - Routing
+  - TypeScript
+  - SEO
+headings:
+  - level: '2'
+    id: why-the-obvious-answers-fail
+    text: Why the obvious answers fail
+  - level: '2'
+    id: one-registry-everything-derived
+    text: One registry, everything derived
+  - level: '2'
+    id: a-page-is-an-entry
+    text: A page is an entry
+  - level: '2'
+    id: reading-a-path-back
+    text: Reading a path back
+  - level: '2'
+    id: serving-the-folder-guarding-the-folder
+    text: Serving the folder, guarding the folder
+  - level: '2'
+    id: the-language-switcher-is-one-line
+    text: The language switcher is one line
+  - level: '2'
+    id: renaming-a-page-is-moving-a-string
+    text: Renaming a page is moving a string
+  - level: '2'
+    id: writing-a-link
+    text: Writing a link
+  - level: '2'
+    id: what-the-tests-hold
+    text: What the tests hold
+  - level: '2'
+    id: everything-else-that-falls-out
+    text: Everything else that falls out
+  - level: '2'
+    id: where-it-isnt-worth-it
+    text: Where it isn't worth it
+  - level: '2'
+    id: the-trade
+    text: The trade
+related:
+  - building-a-temporary-email-service
+  - the-21st-visitor-broke-live-mail
+  - privacy-filters-for-ai-agents
